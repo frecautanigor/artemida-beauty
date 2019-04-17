@@ -1,0 +1,40 @@
+@import "vars"
+
+.btn
+    &:hover .text_gradient
+        @extend %text-gradient
+    @extend %bg-gradient
+    display: inline-block
+    border: none
+    color: #fff
+    text-decoration: none
+    padding: 10px 15px
+    font-size: 14px
+    text-transform: uppercase
+    letter-spacing: 2px
+    text-align: center
+    position: relative
+    outline: none !important
+    transition: all .3s ease
+    cursor: pointer
+    border-radius: 99px
+    margin: $border-margin
+    &:focus, &:hover
+        text-decoration: none
+        color: #fff
+    &:hover
+        transition: all .3s ease
+        background: #fff
+    &::before
+        content: ''
+        position: absolute
+        top: 0
+        right: 0
+        bottom: 0
+        left: 0
+        z-index: -1
+        margin: -$border-margin
+        border-radius: inherit
+        @extend %bg-gradient
+
+
