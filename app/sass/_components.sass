@@ -8,7 +8,9 @@
     border: none
     color: #fff
     text-decoration: none
-    padding: 10px 15px
+    height: 40px
+    line-height: 40px
+    padding: 0 15px
     font-size: 14px
     text-transform: uppercase
     letter-spacing: 2px
@@ -37,4 +39,37 @@
         border-radius: inherit
         @extend %bg-gradient
 
+.form-input
+    border-radius: 99px
+    height: 100%
+    padding: $border-margin
+    width: auto
+    @extend %bg-gradient
+    background: red
+    display: inline-block
+    input
+        border-radius: 99px
+        outline: none
+        padding: 0 10px
+        border: 0
+        height: 40px-($border-margin*2)
 
+.form-textarea
+    border-radius: 10px
+    padding: $border-margin
+    height: 100px
+    width: 220px
+    @extend %bg-gradient
+    background: red
+    display: inline-block
+    textarea
+        border-radius: 10px
+        height: 100%
+        width: 100%
+        resize: none
+        outline: none
+        border: 0
+        padding: 0 10px
+
+
+        
