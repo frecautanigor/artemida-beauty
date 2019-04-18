@@ -10,7 +10,7 @@ input, textarea {
 
 .h2 {
     font-size: 24px;
-    @include text-gradient(blue, red);
+    @include text-gradient();
 }
 
 .p {
