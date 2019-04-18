@@ -1,4 +1,41 @@
 @import "_mixins/font-face";
 
-@include font-face("roboto-example", "../fonts/RobotoRegular/RobotoRegular");
-@include font-face("roboto-example", "../fonts/RobotoBold/RobotoBold", bold);
+//Montserrat
+@include font-face("Montserrat-Italic", "../fonts/Montserrat/Montserrat-Italic", normal, italic);
+@include font-face("Montserrat-Light", "../fonts/Montserrat/Montserrat-Light", 300, normal);
+@include font-face("Montserrat-SemiBoldItalic", "../fonts/Montserrat/Montserrat-SemiBoldItalic", 600, italic);
+@include font-face("Montserrat-Medium", "../fonts/Montserrat/Montserrat-Medium", 500, normal);
+@include font-face("Montserrat-Thin", "../fonts/Montserrat/Montserrat-Thin", 100, normal);
+@include font-face("Montserrat-ExtraLightItalic", "../fonts/Montserrat/Montserrat-ExtraLightItalic", 200, italic);
+@include font-face("Montserrat-Regular", "../fonts/Montserrat/Montserrat-Regular", normal, normal);
+@include font-face("Montserrat-ExtraLight", "../fonts/Montserrat/Montserrat-ExtraLight", 200, normal);
+@include font-face("Montserrat-ExtraBold", "../fonts/Montserrat/Montserrat-ExtraBold", 800, normal);
+@include font-face("Montserrat-MediumItalic", "../fonts/Montserrat/Montserrat-MediumItalic", 500, italic);
+@include font-face("Montserrat-ThinItalic", "../fonts/Montserrat/Montserrat-ThinItalic", 100, italic);
+@include font-face("Montserrat-SemiBold", "../fonts/Montserrat/Montserrat-SemiBold", 600, normal);
+@include font-face("Montserrat-BoldItalic", "../fonts/Montserrat/Montserrat-BoldItalic", bold, italic);
+@include font-face("Montserrat-ExtraBoldItalic", "../fonts/Montserrat/Montserrat-ExtraBoldItalic", 800, italic);
+@include font-face("Montserrat-BlackItalic", "../fonts/Montserrat/Montserrat-BlackItalic", 900, italic);
+@include font-face("Montserrat-Bold", "../fonts/Montserrat/Montserrat-Bold", bold, normal);
+@include font-face("Montserrat-LightItalic", "../fonts/Montserrat/Montserrat-LightItalic", 300, italic);
+@include font-face("Montserrat-Black", "../fonts/Montserrat/Montserrat-Black", 900, normal);
+
+//Lato
+@include font-face("Lato-Thin", "../fonts/Lato/Lato-Thin", 100, normal);
+@include font-face("Lato-BlackItalic", "../fonts/Lato/Lato-BlackItalic", 900, normal);
+@include font-face("Lato-ThinItalic", "../fonts/Lato/Lato-ThinItalic", 100, italic);
+@include font-face("Lato-Hairline", "../fonts/Lato/Lato-Hairline", 300, normal);
+@include font-face("Lato-LightItalic", "../fonts/Lato/Lato-LightItalic", 300, italic);
+@include font-face("Lato-BoldItalic", "../fonts/Lato/Lato-BoldItalic", bold, italic);
+@include font-face("Lato-Heavy", "../fonts/Lato/Lato-Heavy", 900, normal);
+@include font-face("Lato-Medium", "../fonts/Lato/Lato-Medium", 500, normal);
+@include font-face("Lato-Italic", "../fonts/Lato/Lato-Italic", normal, italic);
+@include font-face("Lato-Bold", "../fonts/Lato/Lato-Bold", bold, normal);
+@include font-face("Lato-HairlineItalic", "../fonts/Lato/Lato-HairlineItalic", 300, italic);
+@include font-face("Lato-SemiboldItalic", "../fonts/Lato/Lato-SemiboldItalic", 600, italic);
+@include font-face("Lato-Light", "../fonts/Lato/Lato-Light", 300, normal);
+@include font-face("Lato-MediumItalic", "../fonts/Lato/Lato-MediumItalic", 500, italic);
+@include font-face("Lato-Semibold", "../fonts/Lato/Lato-Semibold", 600, normal);
+@include font-face("Lato-HeavyItalic", "../fonts/Lato/Lato-THeavyItalichin", 900, italic);
+@include font-face("Lato-Regular", "../fonts/Lato/Lato-Regular", normal, normal);
+@include font-face("Lato-Black", "../fonts/Lato/Lato-Black", 900, normal);

@@ -1,0 +1,322 @@
+input, textarea {
+    font-family: Lato-Light;
+}
+
+.h1, .h2 {
+    font-family: Montserrat-Regular;
+    font-size: 32px;
+    text-align: center;
+}
+
+.h2 {
+    font-size: 24px;
+    @include text-gradient(blue, red);
+}
+
+.p {
+    font-family: Lato-Light;
+    font-size: 14px;
+}
+
+.file-upload {
+    display: block;
+    text-align: center;
+    font-family: Lato-Light;
+    font-size: 16px;
+    border-radius: 99px;
+    position: relative;
+    overflow: hidden;
+    &:hover {
+        @include transition();
+    }
+    .file-select {
+        display: block;
+        border-radius: 99px;
+        box-shadow:0px 0px 0px $border $color-accent inset,0px 0px $border 0px $color-accent2 ;
+        cursor: pointer;
+        height: $height-form;
+        line-height: $height-form;
+        text-align: left;
+        background: #fff;
+        overflow: hidden;
+        position: relative;
+        .file-select-button {
+            @include gradient();
+            padding: 0 15px;
+            display: inline-block;
+            height: $height-form;
+            color: #fff;
+            line-height: $height-form;
+        }
+        .file-select-name {
+            line-height: $height-form;
+            display: inline;
+            color: $color-accent;
+            padding: 0 15px;
+        }
+        &:hover {
+            @include transition();
+            .file-select-button {
+                @include gradient($color-accent2, $color-accent);
+                @include transition();
+            }
+        }
+    }
+    &.active .file-select {
+        box-shadow:0px 0px 0px $border  $color-yellow inset,0px 0px $border 0px $color-green;
+        @include transition();
+        .file-select-button {
+            @include gradient($color-green, $color-yellow);
+            @include transition();
+        }
+        .file-select-name {
+            color: $color-green;
+        }
+    }
+    .file-select {
+        input[type=file] {
+            z-index: 100;
+            cursor: pointer;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            filter: alpha(opacity = 0);
+        }
+        &.file-select-disabled {
+            &:hover {
+                cursor: default;
+                display: block;
+                cursor: pointer;
+                height: $height-form;
+                line-height: $height-form;
+                text-align: left;
+                overflow: hidden;
+                position: relative;
+                .file-select-button {
+                    background: #dce4ec;
+                    padding: 0 10px;
+                    display: inline-block;
+                    height: $height-form;
+                    line-height: $height-form;
+                }
+                .file-select-name {
+                    line-height: $height-form;
+                    display: inline-block;
+                    padding: 0 10px;
+                }
+            }
+        }
+    }
+}
+
+.select {
+    font-size: 16px;
+    font-family: Lato-Light;
+    cursor: pointer;
+    display: inline-block;
+    width: 100%;
+    position: relative;
+    height: $height-form;
+    line-height: $height-form;
+    color: #fff;
+    text-align: center;
+    select {
+        opacity: 0;
+    }
+  }
+  
+.styledSelect {
+    @include gradient();
+    border-radius: 10px;
+    box-shadow: 0px 0px $border 0px $color-accent2 ;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 0 10px;
+    &::after {
+        content: 'v';
+        position: absolute;
+        right: 15px;
+    }
+    &:hover {
+        @include gradient($color-accent2, $color-accent);
+        @include transition();
+    }
+    &.active {
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+}
+  
+  .options {
+    display: none;
+    box-shadow: 0px 0px $border 0px $color-accent2;
+    position: absolute;
+    right: 0;
+    left: 0;
+    z-index: 999;
+    margin: 0 0;
+    padding: 0 0;
+    list-style: none;
+    background: #fff;
+    li {
+        padding: 0 6px;
+        margin: 0 0;
+        color: $color-accent;
+        padding: 0 20px;
+      &:hover {
+        background: rgba($color: $color-accent, $alpha: .1);
+        color: $color-accent;
+      }
+    }
+  }
+
+.btn {
+    @include gradient();
+    display: inline-block;
+    border: none;
+    color: #fff;
+    text-decoration: none;
+    height: $height-form;
+    line-height: $height-form;
+    padding: 0 15px;
+    font-size: 14px;
+    font-family: Montserrat-Regular;
+    text-transform: uppercase;
+    text-align: center;
+    position: relative;
+    outline: none !important;
+    @include transition();
+    cursor: pointer;
+    border-radius: 99px;
+    margin: $border;
+
+    &:focus, &:hover {
+        text-decoration: none;
+        color: $color-accent;
+    }
+
+    &:hover {
+        @include transition();
+        background: #fff;
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+        margin: -$border;
+        border-radius: inherit;
+        @include gradient();
+    }
+}
+
+.btn.save {
+    @include gradient($color-green, $color-yellow);
+    color: #fff;
+    &:focus, &:hover {
+        color: $color-green;
+    }
+    &:hover {
+        @include transition();
+        background: #fff;
+    }
+    &::before {
+        @include gradient($color-green, $color-yellow);
+    }
+}
+
+.btn.delete {
+    @include gradient($color-accent, $color-reddark);
+    color: #fff;
+    &:focus, &:hover {
+        color: $color-accent;
+    }
+    &:hover {
+        @include transition();
+        background: #fff;
+    }
+    &::before {
+        @include gradient($color-accent, $color-reddark);
+    }
+}
+
+.btn.reverse {
+    color: $color-accent;
+    background: #fff;
+    &:focus, &:hover {
+        color: #fff;
+    }
+    &:hover {
+        @include gradient();
+        @include transition();
+    }
+}
+
+.btn.save.reverse {
+    color: $color-green;
+    background: #fff;
+    &:focus, &:hover {
+        color: #fff;
+    }
+    &:hover {
+        @include gradient($color-green, $color-yellow);
+        @include transition();
+    }
+}
+
+.btn.delete.reverse {
+    color: $color-accent;
+    background: #fff;
+    &:focus, &:hover {
+        color: #fff;
+    }
+    &:hover {
+        @include gradient($color-accent, $color-reddark);
+        @include transition();
+    }
+}
+
+.form-input {
+    border-radius: 99px;
+    height: 100%;
+    width: 100%;
+    padding: $border;
+    @include gradient();
+    display: inline-block;
+    input {
+        width: 100%;
+        border-radius: 99px;
+        outline: none;
+        padding: 0 10px;
+        border: 0;
+        height: $height-form - ($border*2);
+    }
+}
+
+.form-textarea {
+    border-radius: 10px;
+    padding: $border;
+    height: 100px;
+    width: 100%;
+    @include gradient();
+    display: inline-block;
+    textarea {
+        border-radius: 10px;
+        height: 100%;
+        width: 100%;
+        resize: none;
+        outline: none;
+        border: 0;
+        padding: 0 10px;
+    }
+}
