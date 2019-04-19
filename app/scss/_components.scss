@@ -1,11 +1,26 @@
-input, textarea {
+input,
+textarea,
+button {
     font-family: Lato-Light;
 }
 
-.h1, .h2 {
+a {
+    &:hover,
+    &:focus {
+        text-decoration: none;
+    }
+}
+
+.h1,
+.h2 {
     font-family: Montserrat-Regular;
     font-size: 32px;
     text-align: center;
+    text-transform: uppercase;
+}
+
+.h1 {
+    margin: 30px 0;
 }
 
 .h2 {
@@ -26,13 +41,15 @@ input, textarea {
     border-radius: 99px;
     position: relative;
     overflow: hidden;
+
     &:hover {
         @include transition();
     }
+
     .file-select {
         display: block;
         border-radius: 99px;
-        box-shadow:0px 0px 0px $border $color-accent inset,0px 0px $border 0px $color-accent2 ;
+        box-shadow: 0px 0px 0px $border $color-accent inset, 0px 0px $border 0px $color-accent2;
         cursor: pointer;
         height: $height-form;
         line-height: $height-form;
@@ -40,6 +57,7 @@ input, textarea {
         background: #fff;
         overflow: hidden;
         position: relative;
+
         .file-select-button {
             @include gradient();
             padding: 0 15px;
@@ -48,31 +66,38 @@ input, textarea {
             color: #fff;
             line-height: $height-form;
         }
+
         .file-select-name {
             line-height: $height-form;
             display: inline;
             color: $color-accent;
             padding: 0 15px;
         }
+
         &:hover {
             @include transition();
+
             .file-select-button {
                 @include gradient($color-accent2, $color-accent);
                 @include transition();
             }
         }
     }
+
     &.active .file-select {
-        box-shadow:0px 0px 0px $border  $color-yellow inset,0px 0px $border 0px $color-green;
+        box-shadow: 0px 0px 0px $border $color-yellow inset, 0px 0px $border 0px $color-green;
         @include transition();
+
         .file-select-button {
             @include gradient($color-green, $color-yellow);
             @include transition();
         }
+
         .file-select-name {
             color: $color-green;
         }
     }
+
     .file-select {
         input[type=file] {
             z-index: 100;
@@ -83,8 +108,9 @@ input, textarea {
             top: 0;
             left: 0;
             opacity: 0;
-            filter: alpha(opacity = 0);
+            filter: alpha(opacity=0);
         }
+
         &.file-select-disabled {
             &:hover {
                 cursor: default;
@@ -95,6 +121,7 @@ input, textarea {
                 text-align: left;
                 overflow: hidden;
                 position: relative;
+
                 .file-select-button {
                     background: #dce4ec;
                     padding: 0 10px;
@@ -102,6 +129,7 @@ input, textarea {
                     height: $height-form;
                     line-height: $height-form;
                 }
+
                 .file-select-name {
                     line-height: $height-form;
                     display: inline-block;
@@ -123,37 +151,41 @@ input, textarea {
     line-height: $height-form;
     color: #fff;
     text-align: center;
+
     select {
         opacity: 0;
     }
-  }
-  
+}
+
 .styledSelect {
     @include gradient();
     border-radius: 10px;
-    box-shadow: 0px 0px $border 0px $color-accent2 ;
+    box-shadow: 0px 0px $border 0px $color-accent2;
     position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
     padding: 0 10px;
+
     &::after {
         content: 'v';
         position: absolute;
         right: 15px;
     }
+
     &:hover {
         @include gradient($color-accent2, $color-accent);
         @include transition();
     }
+
     &.active {
         border-bottom-right-radius: 0;
         border-bottom-left-radius: 0;
     }
 }
-  
-  .options {
+
+.options {
     display: none;
     box-shadow: 0px 0px $border 0px $color-accent2;
     position: absolute;
@@ -164,17 +196,19 @@ input, textarea {
     padding: 0 0;
     list-style: none;
     background: #fff;
+
     li {
         padding: 0 6px;
         margin: 0 0;
         color: $color-accent;
         padding: 0 20px;
-      &:hover {
-        background: rgba($color: $color-accent, $alpha: .1);
-        color: $color-accent;
-      }
+
+        &:hover {
+            background: rgba($color: $color-accent, $alpha: .1);
+            color: $color-accent;
+        }
     }
-  }
+}
 
 .btn {
     @include gradient();
@@ -196,7 +230,8 @@ input, textarea {
     border-radius: 99px;
     margin: $border;
 
-    &:focus, &:hover {
+    &:focus,
+    &:hover {
         text-decoration: none;
         color: $color-accent;
     }
@@ -223,13 +258,17 @@ input, textarea {
 .btn.save {
     @include gradient($color-green, $color-yellow);
     color: #fff;
-    &:focus, &:hover {
+
+    &:focus,
+    &:hover {
         color: $color-green;
     }
+
     &:hover {
         @include transition();
         background: #fff;
     }
+
     &::before {
         @include gradient($color-green, $color-yellow);
     }
@@ -238,13 +277,17 @@ input, textarea {
 .btn.delete {
     @include gradient($color-accent, $color-reddark);
     color: #fff;
-    &:focus, &:hover {
+
+    &:focus,
+    &:hover {
         color: $color-accent;
     }
+
     &:hover {
         @include transition();
         background: #fff;
     }
+
     &::before {
         @include gradient($color-accent, $color-reddark);
     }
@@ -253,9 +296,12 @@ input, textarea {
 .btn.reverse {
     color: $color-accent;
     background: #fff;
-    &:focus, &:hover {
+
+    &:focus,
+    &:hover {
         color: #fff;
     }
+
     &:hover {
         @include gradient();
         @include transition();
@@ -265,9 +311,12 @@ input, textarea {
 .btn.save.reverse {
     color: $color-green;
     background: #fff;
-    &:focus, &:hover {
+
+    &:focus,
+    &:hover {
         color: #fff;
     }
+
     &:hover {
         @include gradient($color-green, $color-yellow);
         @include transition();
@@ -277,9 +326,12 @@ input, textarea {
 .btn.delete.reverse {
     color: $color-accent;
     background: #fff;
-    &:focus, &:hover {
+
+    &:focus,
+    &:hover {
         color: #fff;
     }
+
     &:hover {
         @include gradient($color-accent, $color-reddark);
         @include transition();
@@ -293,6 +345,7 @@ input, textarea {
     padding: $border;
     @include gradient();
     display: inline-block;
+
     input {
         width: 100%;
         border-radius: 99px;
@@ -310,6 +363,7 @@ input, textarea {
     width: 100%;
     @include gradient();
     display: inline-block;
+
     textarea {
         border-radius: 10px;
         height: 100%;

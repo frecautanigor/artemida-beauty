@@ -23,6 +23,84 @@ body {
 	overflow-x: hidden;
 }
 
+.team {
+	height: 400px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-direction: column;
+	text-align: center;
+	background: #000;
+	background-image: url(../img/team.jpg);
+	background-repeat: no-repeat;
+	background-position: top center;
+	background-size: 100% auto;
 
+	[class*="icon-"] {
+		font-size: 26px;
+		@include text-gradient();
+	}
 
+	&__setting {
+		display: flex;
+		justify-content: space-between;
+
+		.btn {
+			border-radius: 0;
+			width: 100%;
+		}
+	}
+
+	&__contact {
+		height: 100%;
+		width: 100%;
+		@include transition();
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+			background-color: rgba($color: $color-dark, $alpha: .95);
+
+		&-phone {
+			a {
+				font-family: Montserrat-Regular;
+				font-size: 20px;
+				color: #fff;
+				display: block;
+			}
+		}
+
+		&-email a{
+			display: block;
+			margin: 25px 0;
+			font-family: Lato-Regular;
+			font-size: 14px;
+			color: #fff;
+		}
+
+		&-social{
+			[class*="icon-"]:hover {
+				-webkit-text-fill-color: #fff;
+			}
+		}
+	}
+
+	&__info {
+		@include gradient(rgba($color: $color-accent, $alpha: .95));
+		width: 100%;
+		padding: 30px 15px;
+		color: #fff;
+
+		&-name {
+			font-size: 18px;
+			font-family: Montserrat-Regular;
+		}
+
+		&-function {
+			font-size: 14px;
+			font-family: Lato-Regular;
+		}
+	}
+}
+
+@import "admin"; // Styles for admin
 @import "media"; // Always at the end

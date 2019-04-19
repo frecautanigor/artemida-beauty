@@ -1,15 +1,15 @@
 $( document ).ready(function() {
 
 	// Browse files
-	$('#chooseFile').bind('change', function () {
-		var filename = $("#chooseFile").val();
+	$('.chooseFile').bind('change', function () {
+		var filename = $(".chooseFile").val();
 		if (/^\s*$/.test(filename)) {
 			$(".file-upload").removeClass('active');
-			$("#noFile").text("JS Imaginea nu a fost selectată"); 
+			$(".noFile").text("JS Imaginea nu a fost selectată"); 
 		}
 		else {
 			$(".file-upload").addClass('active');
-			$("#noFile").text(filename.replace("C:\\fakepath\\", "")); 
+			$(".noFile").text(filename.replace("C:\\fakepath\\", "")); 
 		}
 	});
 
@@ -64,4 +64,14 @@ $( document ).ready(function() {
 
 	});
 
+	// Aside panel
+	$('.aside__button').click(function() {
+		var aside = $('#'+ $(this).attr('data-aside'));
+		aside.toggleClass('show');
+		if (aside.hasClass('show')) {
+		  $(this).text('X');}
+		else {
+		  $(this).text('☰');
+		}
+	  });
 });
