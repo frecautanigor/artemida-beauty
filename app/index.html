@@ -42,25 +42,88 @@
 </head>
 
 <body>
-
-	<h1>Artemida Style</h1>
-	<button class="btn"><span class="text_gradient">Button</span></button>
-	<a href="" class="btn"><span class="text_gradient">Link</span></a>
-
-	<br>
-	<hr>
-
-	<button class="btn"><span class="text_gradient">Alte detalii</span></button>
-	<a href="" class="btn"><span class="text_gradient">Alte detalii</span></a>
-
-	<span class="icon-barber"></span>
 	
-	<div class="form-input"><input type="text" placeholder="text placeholder"></div>
-	<div class="form-input"><input type="password" placeholder="text placeholder"></div>
+	<div class="container">
+		<div class="row">
 
-	<div class="form-textarea"><textarea name="" placeholder="placeholder"></textarea></div>
+			<div class="col-md-3">
+				<h1 class="h1">H1 Title</h1>
+				<h2 class="h2">H2 Title</h2>
+				<p class="p">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse explicabo nostrum illum magni, repellat minus odit, officia, aliquam cupiditate voluptate ad dolorum illo maxime culpa dignissimos repellendus. Quod, aliquam voluptate.</p>
+			</div>
 
+			<div class="col-md-3">
+				<form action="">
+					<div class="form-input"><input type="text" placeholder="Text"></div>
+					<div class="form-input"><input type="password" placeholder="Password"></div>
 
+					<div class="form-textarea">
+						<textarea name="" placeholder="Content"></textarea>
+					</div>
+					
+
+					<div class="file-upload">
+						<div class="file-select">
+							<div class="file-select-button" id="fileName">Selectează</div>
+							<div class="file-select-name" id="noFile">HTML Imaginea </div> 
+							<input type="file" name="chooseFile" id="chooseFile">
+						</div>
+					</div>
+					<br>
+					<select id="selectbox">
+						<option value="">Selectați Serviciul</option>
+						<option value="january">January</option>
+						<option value="february">February</option>
+						<option value="march">March</option>
+						<option value="april">April</option>
+						<option value="may">May</option>
+						<option value="june">June</option>
+						<option value="july">July</option>
+						<option value="august">August</option>
+						<option value="september">September</option>
+						<option value="october">October</option>
+						<option value="november">November</option>
+						<option value="december">December</option>
+					</select>
+
+				</form>
+			</div>
+
+			<div class="col-md-2">
+				<button class="btn">Button</button>
+				<a href="" class="btn">Link</a>
+
+			</div>
+
+			<div class="col-md-2">
+				<button class="btn save">Save Button</button>
+				<a href="" class="btn save">Save Link</a>
+			</div>
+
+			<div class="col-md-2">
+					<button class="btn delete">Delete Button</button>
+					<a href="" class="btn delete">Delete Link</a>
+			</div>
+
+		</div>
+
+		<div class="row">
+				<div class="col-md-4">
+						<button class="btn reverse">Delete Button</button>
+						<a href="" class="btn delete">Delete Link</a>
+				</div>
+	
+				<div class="col-md-4">
+						<button class="btn save reverse">Delete Button</button>
+						<a href="" class="btn delete">Delete Link</a>
+				</div>
+	
+				<div class="col-md-4">
+						<button class="btn delete reverse">Delete Button</button>
+						<a href="" class="btn delete">Delete Link</a>
+				</div>
+		</div>
+	</div>
 
 	<script src="js/scripts.min.js"></script>
 
