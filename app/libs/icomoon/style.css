@@ -1,0 +1,146 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?t9wspl');
+  src:  url('fonts/icomoon.eot?t9wspl#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?t9wspl') format('truetype'),
+    url('fonts/icomoon.woff?t9wspl') format('woff'),
+    url('fonts/icomoon.svg?t9wspl#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-appointment:before {
+  content: "\e900";
+}
+.icon-barbell:before {
+  content: "\e901";
+}
+.icon-barber:before {
+  content: "\e902";
+}
+.icon-bucket:before {
+  content: "\e903";
+}
+.icon-calendar:before {
+  content: "\e904";
+}
+.icon-close:before {
+  content: "\e905";
+}
+.icon-cream:before {
+  content: "\e906";
+}
+.icon-diamond:before {
+  content: "\e907";
+}
+.icon-donation:before {
+  content: "\e908";
+}
+.icon-email:before {
+  content: "\e909";
+}
+.icon-facebook:before {
+  content: "\e90a";
+}
+.icon-flower:before {
+  content: "\e90b";
+}
+.icon-hair-cut:before {
+  content: "\e90c";
+}
+.icon-heart:before {
+  content: "\e90d";
+}
+.icon-honest:before {
+  content: "\e90e";
+}
+.icon-hot-spring:before {
+  content: "\e90f";
+}
+.icon-instagram:before {
+  content: "\e910";
+}
+.icon-location:before {
+  content: "\e911";
+}
+.icon-make-up:before {
+  content: "\e912";
+}
+.icon-mask:before {
+  content: "\e913";
+}
+.icon-messenger:before {
+  content: "\e914";
+}
+.icon-mobile-phone:before {
+  content: "\e915";
+}
+.icon-muscle:before {
+  content: "\e916";
+}
+.icon-phone:before {
+  content: "\e917";
+}
+.icon-photo-album:before {
+  content: "\e918";
+}
+.icon-play:before {
+  content: "\e919";
+}
+.icon-quote:before {
+  content: "\e91a";
+}
+.icon-rocket:before {
+  content: "\e91b";
+}
+.icon-salon:before {
+  content: "\e91c";
+}
+.icon-sauna:before {
+  content: "\e91d";
+}
+.icon-sauna-relax:before {
+  content: "\e91e";
+}
+.icon-solarium:before {
+  content: "\e91f";
+}
+.icon-spa:before {
+  content: "\e920";
+}
+.icon-sun:before {
+  content: "\e921";
+}
+.icon-team-support:before {
+  content: "\e922";
+}
+.icon-trainer:before {
+  content: "\e923";
+}
+.icon-trustworthy:before {
+  content: "\e924";
+}
+.icon-up-arrow:before {
+  content: "\e925";
+}
+.icon-zoom:before {
+  content: "\e926";
+}
+.icon-logo:before {
+  content: "\e927";
+}
