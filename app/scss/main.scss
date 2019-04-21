@@ -5,7 +5,7 @@
 @import "components";
 
 ::placeholder {
-	color: #777;
+	color: #777777;
 }
 
 ::selection {
@@ -23,33 +23,45 @@ body {
 	overflow-x: hidden;
 }
 
-header{
+header {
 	min-height: 100vh;
 	text-align: center;
 	width: 100%;
 	background-size: cover;
-	a:hover{text-decoration: none;}
-	nav{
+
+	a:hover {
+		text-decoration: none;
+	}
+
+	nav {
 		position: fixed;
 		width: 100vw;
 		height: 60px;
 		display: flex;
 		justify-content: space-around;
 		align-items: center;
-		.logo{
+
+		.logo {
 			color: $color-white;
 			font-size: 30px;
-			&:hover{opacity: .6; transition: .5s;}
+
+			&:hover {
+				opacity: .6;
+				transition: .5s;
+			}
 		}
-		.links{
+
+		.links {
 			display: flex;
 			justify-content: center;
-			a{
+
+			a {
 				margin: 5px 15px 0;
 				color: $color-white;
 				font-family: Montserrat-Light;
 				font-size: 14px;
-				&::after{
+
+				&::after {
 					display: block;
 					content: '';
 					height: 5px;
@@ -59,21 +71,27 @@ header{
 					margin: 0 auto;
 					transition: .5s;
 				}
-				&:hover::after{background: $color-white}
+
+				&:hover::after {
+					background: $color-white
+				}
 			}
 		}
-		.social a{
+
+		.social a {
 			color: $color-white;
 			margin: 0 5px;
 		}
 	}
-	.filter{
+
+	.filter {
 		width: 100%;
 		height: 100vh;
 		background: rgba($color-dark, .4);
 		display: flex;
 		align-items: center;
-		.presentation{
+
+		.presentation {
 			text-align: left;
 			color: $color-white;
 			font-family: Montserrat-Light;
@@ -99,6 +117,11 @@ header{
 	background-position: top center;
 	background-size: 100% auto;
 
+	&:hover &__contact,
+	&:active &__contact {
+		opacity: 1;
+	}
+
 	[class*="icon-"] {
 		font-size: 26px;
 		@include text-gradient();
@@ -121,7 +144,8 @@ header{
 		display: flex;
 		justify-content: center;
 		flex-direction: column;
-			background-color: rgba($color: $color-dark, $alpha: .95);
+		background-color: rgba($color: $color-dark, $alpha: .95);
+		opacity: 0;
 
 		&-phone {
 			a {
@@ -129,20 +153,20 @@ header{
 				font-size: 20px;
 				color: #fff;
 				display: block;
+				&:hover {
+					@include text-gradient();
+				}
 			}
 		}
 
-		&-email a{
+		&-email a {
 			display: block;
 			margin: 25px 0;
 			font-family: Lato-Regular;
 			font-size: 14px;
 			color: #fff;
-		}
-
-		&-social{
-			[class*="icon-"]:hover {
-				-webkit-text-fill-color: #fff;
+			&:hover {
+				@include text-gradient();
 			}
 		}
 	}
