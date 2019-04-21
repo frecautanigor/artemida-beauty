@@ -10,7 +10,25 @@
 
 // ≥992px
 @include media-breakpoint-down(md) {
-
+	header{
+		nav{
+			.hamburger{display: block;}
+			.links{
+				display: none;
+				&.show{
+					display: flex;
+					width: 100vw;
+					flex-direction: column;
+					position: absolute;
+					top: 60px;
+					background-color: rgba($color-dark, .95);
+					a{
+						margin: 10px;
+					}
+				}
+			}
+		}
+	}
 }
 
 // ≥768px
