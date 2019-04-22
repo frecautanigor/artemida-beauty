@@ -41,7 +41,13 @@ header {
 		justify-content: space-around;
 		align-items: center;
 		&.transparent{background: transparent;}
-		&.dark{background: $color-dark;}
+		&.dark, &.active{
+			background: rgba($color-dark, .8);
+			@include transition();
+			&:hover{
+				background: $color-dark;
+			}
+		}
 		.hamburger{
 			display: none;
 			outline: none

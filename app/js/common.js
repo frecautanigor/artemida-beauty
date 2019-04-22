@@ -89,12 +89,13 @@ $( document ).ready(function() {
 
 	//hamburger click show nav
 	$('.hamburger').click(function() {
-		$( ".links" ).toggleClass( "show" );
+		$( ".links" ).toggleClass( "show");
+		$('nav').toggleClass("active");
 	});
 
 	//add bg for nav on scrolling
 	$(function() {
-		var nav = $(".transparent");
+		var nav = $('nav');
 		$(window).scroll(function() {    
 			var scroll = $(window).scrollTop();
 
@@ -103,7 +104,8 @@ $( document ).ready(function() {
 			}
 			else {
 				nav.removeClass("dark").addClass('transparent');
-        }
+
+        	}
 	    });
 	});
 
