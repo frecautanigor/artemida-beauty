@@ -51,34 +51,18 @@ header {
 			font-size: 30px;
 			@include transition();
 			&:hover{opacity: .6;}
-		.logo {
-			color: $color-white;
-			font-size: 30px;
-
-			&:hover {
-				opacity: .6;
-				transition: .5s;
-			}
 		}
-
 		.links {
 			display: flex;
 			justify-content: center;
 			align-items: center;
-			a{
+			a {
 				margin: 4px 15px 0;
 				color: $color-white;
 				font-family: Montserrat-Light;
 				font-size: 14px;
-				&::after{
-					@include transition();
-			a {
-				margin: 5px 15px 0;
-				color: $color-white;
-				font-family: Montserrat-Light;
-				font-size: 14px;
-
 				&::after {
+					@include transition();
 					display: block;
 					content: '';
 					height: 5px;
@@ -87,7 +71,6 @@ header {
 					background: rgba($color-white, 0);
 					margin: 0 auto;
 				}
-
 				&:hover::after {
 					background: $color-white
 				}
@@ -108,7 +91,6 @@ header {
 		background: rgba($color-dark, .4);
 		display: flex;
 		align-items: center;
-
 		.presentation {
 			text-align: left;
 			color: $color-white;
