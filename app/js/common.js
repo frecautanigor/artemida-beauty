@@ -99,7 +99,7 @@ $( document ).ready(function() {
 		$(window).scroll(function() {    
 			var scroll = $(window).scrollTop();
 
-			if (scroll >= 200) {
+			if (scroll >= 400) {
 				nav.removeClass('transparent').addClass("dark");
 			}
 			else {
@@ -107,6 +107,43 @@ $( document ).ready(function() {
 
         	}
 	    });
+	});
+
+	// footer__partners slick
+	$('.footer__partners').slick({
+		arrows: false,
+		slidesToShow: 5,
+		slidesToScroll: 1,
+		autoplay: true,
+		autoplaySpeed: 2000,
+		infinite: true,
+		focusOnSelect: true,
+		responsive: [
+			{
+				breakpoint: 992,
+				settings: {
+					slidesToShow: 4,
+				}
+			},
+			{
+				breakpoint: 768,
+				settings: {
+					slidesToShow: 3,
+				}
+			},
+			{
+				breakpoint: 576,
+				settings: {
+					slidesToShow: 2,
+				}
+			},
+			{
+				breakpoint: 480,
+				settings: {
+					slidesToShow: 1,
+				}
+			}
+		]
 	});
 
 });
