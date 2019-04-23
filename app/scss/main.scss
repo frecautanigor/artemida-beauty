@@ -34,6 +34,7 @@ header {
 	}
 
 	nav {
+		z-index: 999999999;
 		position: fixed;
 		width: 100vw;
 		height: 60px;
@@ -56,7 +57,10 @@ header {
 			color: $color-white;
 			font-size: 30px;
 			@include transition();
-			&:hover{opacity: .6;}
+			&:hover{
+				opacity: .6;
+				// @include text-gradient();
+			}
 		}
 		.links {
 			display: flex;
@@ -124,11 +128,7 @@ header {
 		}
 	}
 	&__main{
-		padding: 30px 0;
 		background: $color-dark;
-		display: flex;
-		align-items: flex-start;
-		justify-content: space-around;
 		&-about, &-contacts, &-useful, &-fb{
 			display: flex;
 			flex-direction: column;
@@ -148,6 +148,7 @@ header {
 				display: flex;
 				flex-direction: column;
 				color: $color-white;
+				font-size: 14px;
 				.location, .phones, .mail{
 					display: flex;
 					align-items: center;
@@ -164,6 +165,36 @@ header {
 				}
 				.location{margin: 0 0 15px 0;}
 			}
+		}
+		&-useful{
+			.links{
+				display: flex;
+				flex-direction: column;
+				justify-content: flex-start;
+				align-items: flex-start;
+				font-size: 14px;
+				a{
+					&.first{margin: 0 0 15px 0;}
+					@include transition();
+					margin: 15px 0;
+					color: $color-white;
+					&:hover{opacity: .7;}
+				}
+			}
+		}
+	}
+	&__creators{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-size: 14px;
+		color: $color-dark;
+		padding: 15px 0;
+		.icon-heart{font-size: 18px; color: $color-insta;}
+		p{margin: 0; text-align: center;}
+		a{
+			color: $color-dark;
+			&:hover{color: $color-fb;}
 		}
 	}
 }

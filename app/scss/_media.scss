@@ -29,6 +29,15 @@
 			}
 		}
 	}
+
+	.footer{
+		&__main{
+			&-about, &-contacts, &-useful, &-fb{
+				align-items: center;
+			}
+		}
+
+	}
 }
 
 // ≥768px
