@@ -47,7 +47,11 @@
 
 // ≥576px
 @include media-breakpoint-down(xs) {
-
+	.newsletter{
+		form{
+			.form-input, .btn{margin: 15px;}			
+		}
+	}
 }
 
 
