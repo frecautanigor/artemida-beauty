@@ -38,6 +38,16 @@
 </head>
 
 <body>
+	<div id="call" class="modal">
+		<h1 class="h1">Comandă un apel!</h1>
+		<form action="" class="modal__call">
+			<div class="form-input"><input type="text" placeholder="Nume Prenume"></div>
+			<div class="form-input"><input type="text" placeholder="Telefon"></div>
+			<button class="btn">Comandă apel</button>
+			<a href="tel:+37368826666" class="btn call"><span class="icon-phone"></span> Apel direct</a>
+		</form>
+	</div>
+
 	<header data-vide-bg="video/artemida">
 		<nav class="transparent">
 
@@ -236,6 +246,15 @@
 		</section>
 
 	</footer>
+	
+
+	<div class="absolute__elements">
+		<a href="#call" rel="modal:open" class="absolute__elements-link call"><span class="icon-phone"></span></a>
+		<a href="#registration" rel="modal:open" class="absolute__elements-link testimonial"><span class="icon-appointment"></span></a>
+		<a href="#0" class="cd-top btntop" style="background-image: url(img/up-arrow.svg)">Top</a>
+	</div>
+
+
 
 	<script src="js/scripts.min.js"></script>
 

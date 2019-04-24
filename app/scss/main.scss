@@ -21,8 +21,18 @@ body {
 	line-height: 1.5;
 	font-family: Lato-Light;
 	overflow-x: hidden;
-}
 
+}
+body::-webkit-scrollbar{
+	width: 10px;
+	padding: 2px;
+	background-color: $color-dark;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+body::-webkit-scrollbar-thumb{
+	border-radius: 16px;
+	background: $color-accent;
+}
 header {
 	min-height: 100vh;
 	text-align: center;
@@ -337,6 +347,94 @@ header {
 		&-function {
 			font-size: 14px;
 			font-family: Lato-Regular;
+		}
+	}
+}
+
+.absolute__elements{
+	position: fixed;
+	bottom: 0px;
+	right: 25px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	&-link{
+		height: 60px;
+		width: 60px;
+		border-radius: 50%;
+		margin: 15px 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		color: $color-white;
+		font-size: 18px;
+		&::after{
+			position: absolute;
+			content: '';
+			display: block;
+			height: 80px;
+			width: 80px;
+			border-radius: 50%;
+			z-index: -9;
+			@include transition();
+		}
+		&:hover{
+			color: $color-white;
+			&::after{
+				height: 70px;
+				width: 70px;
+			}
+		}
+		&.testimonial{
+			background-color: $color-testimonialered;
+			&::after{
+				background-color: rgba($color-testimonialered, .4);
+			}
+		}
+		&.call{
+			background-color: $color-callgreen;
+			&::after{
+				background-color: rgba($color-callgreen, .4);
+			}
+		}
+		
+	}
+	.cd-top {
+		margin-top: 5px;
+		bottom: 0;
+		right: 0;
+		position: relative;
+		height: 30px;
+		width: 60px;
+		border-radius: 10px 10px 0 0;
+		box-shadow: 0px rgba(0, 0, 0, 0.05);
+		background: rgba($color-dark, .8) no-repeat center 50%;
+		background-size: cover;
+	}
+}
+.modal{
+	&__call{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		.form-input, .btn{
+			width: 180px;
+			margin: 15px 0;
+		}
+		.btn.call{
+			background: none;
+			background-color: $color-callgreen;
+			width: fit-content;
+			margin: 15px 0 45px 0;
+			&::before{
+				display: none;
+			}
+			&:hover, &:active, &:focus{
+				color: $color-white;
+				background-color: rgba($color-callgreen, .7);
+			}
 		}
 	}
 }
