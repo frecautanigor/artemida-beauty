@@ -146,14 +146,6 @@ $( document ).ready(function() {
 		]
 	});
 
-	//Chrome Smooth Scroll
-	try {
-	    $.browserSelector();
-	    if ($("html").hasClass("chrome")) {
-	        $.smoothScroll();
-	    }
-	} catch (err) {};
-
 	// btn back to top
 	var offset = 300,
 		offset_opacity = 1200,
@@ -165,14 +157,175 @@ $( document ).ready(function() {
 			$back_to_top.addClass('cd-fade-out');
 		}
 	});
-
-	//smooth scroll to top
 	$back_to_top.on('click', function(event){
 		event.preventDefault();
 		$('body,html').animate({
 			scrollTop: 0 ,
 		 	}, scroll_top_duration
 		);
+	});
+
+	// validator
+	$( "#form-call" ).validate({
+		rules: {
+		// no quoting necessary
+			name: {
+				required: true,
+				minlength: 5
+			},
+			phone: {
+				required: true,
+				digits: true,
+				minlength: 9
+			},
+		},
+		messages: {
+			name: {
+				required:"Cîmp Obligatoriu",
+				minlength: "Minim 5 caractere !"
+			},
+			phone: {
+				required: "Cîmp Obligatoriu",
+				digits: "Doar cifre",
+				minlength: "Minim 9 cifre !",
+			},                                           
+		},
+	});
+
+	$( "#newsletter__form" ).validate({
+		rules: {
+			mail: {
+				required: true,
+				email: true,
+			},
+		},
+		messages: {
+			mail: {
+				required:"Mail Obligatoriu",
+				email: "Mail invalid"
+			},
+		},
+	});
+
+	$( "#schelduling__form" ).validate({
+		rules: {
+			message: {
+					required: true,
+					minlength: 10
+			},
+			name: {
+				required: true,
+				minlength: 5
+			},
+			phone: {
+				required: true,
+				digits: true,
+				minlength: 9
+			},
+			mail: {
+				required: true,
+				email: true,
+			},
+		},
+		messages: {
+			message: {
+					required:"Cîmp Obligatoriu",
+					minlength: 10
+			},
+			name: {
+				required:"Cîmp Obligatoriu",
+				minlength: "Minim 5 caractere !"
+			},
+			phone: {
+				required: "Cîmp Obligatoriu",
+				digits: "Doar cifre",
+				minlength: "Minim 9 cifre !",
+			},
+			mail: {
+				required:"Mail Obligatoriu",
+				email: "Mail invalid"
+			},
+		},
+	});
+
+	$( "#testimonial__form" ).validate({
+		rules: {
+			message: {
+				required: true,
+				minlength: 10
+			},
+			name: {
+				required: true,
+				minlength: 5
+			},
+			phone: {
+				required: true,
+				digits: true,
+				minlength: 9
+			},
+			choseFile: {
+				required: true,
+			},
+		},
+		messages: {
+			message: {
+					required:"Cîmp Obligatoriu",
+					minlength: 10
+			},
+			name: {
+				required:"Cîmp Obligatoriu",
+				minlength: "Minim 5 caractere !"
+			},
+			phone: {
+				required: "Cîmp Obligatoriu",
+				digits: "Doar cifre",
+				minlength: "Minim 9 cifre !",
+			},
+			choseFile: {
+				required: "Alege imaginea."
+			}
+		},
+	});
+
+	$( "#career__form" ).validate({
+		rules: {
+			message: {
+				required: true,
+				minlength: 10
+			},
+			name: {
+				required: true,
+				minlength: 5
+			},
+			phone: {
+				required: true,
+				digits: true,
+				minlength: 9
+			},
+			mail: {
+				required: true,
+				email: true,
+			},
+		},
+		messages: {
+			message: {
+				required:"Cîmp Obligatoriu",
+				minlength: "Minim 10 caractere"
+			},
+			name: {
+				required:"Cîmp Obligatoriu",
+				minlength: "Minim 5 caractere !"
+			},
+			phone: {
+				required: "Cîmp Obligatoriu",
+				digits: "Doar cifre",
+				minlength: "Minim 9 cifre !",
+			},
+			mail: {
+				required:"Mail Obligatoriu",
+				email: "Mail invalid"
+			},
+		},
 	});
 
 });

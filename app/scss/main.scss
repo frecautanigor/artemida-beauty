@@ -44,7 +44,7 @@ header {
 	}
 
 	nav {
-		z-index: 999999999;
+		z-index: 99999;
 		position: fixed;
 		width: 100vw;
 		height: 60px;
@@ -413,6 +413,10 @@ header {
 		background-size: cover;
 	}
 }
+.jquery-modal.blocker{
+	background: rgba($color-dark, .9)!important;
+	z-index: 999999!important;
+}
 .modal{
 	&__call{
 		display: flex;
@@ -434,6 +438,22 @@ header {
 			&:hover, &:active, &:focus{
 				color: $color-white;
 				background-color: rgba($color-callgreen, .7);
+			}
+		}
+	}
+	&__scheldule, &__testimonial, &__career{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		&-left, &-right{
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			margin: 15px;
+			margin-top: -15px;
+			align-items: center;
+			.form-input, .btn, .select, .form-textarea, .upload{
+				margin: 15px;
 			}
 		}
 	}
