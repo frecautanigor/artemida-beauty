@@ -328,4 +328,29 @@ $( document ).ready(function() {
 		},
 	});
 
+	// preloader
+		$(window).on('load', function () {
+	        var $preloader = $('#p_prldr'),
+	            $svg_anm   = $preloader.find('.svg_anm');
+	        $svg_anm.fadeOut();
+	        $preloader.delay(2000).fadeOut('slow');
+	    });
+
+	// cookies
+	$(function () {
+	$('.cookie-popup').firstVisitPopup({
+	  cookieName : 'homepage',
+	  showAgainSelector: '#show-message'
+	 });
+	});
+
+	// smoth scroll
+	$(document).ready(function() {
+		try {
+			$.browserSelector();
+			if ($("html").hasClass("chrome")) {
+				$.smoothScroll();
+			}
+		} catch (err) {};
+	});
 });

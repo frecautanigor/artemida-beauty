@@ -458,6 +458,54 @@ header {
 		}
 	}
 }
-
+#p_prldr{
+	position: fixed;
+	z-index: 99999999999999999999;
+	background-color: $color-dark;
+	display: flex;
+	width: 100vw;
+	height: 100vh;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	.contpre{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		.svg_anm{
+			display: block !important;
+			width: 80px;
+			height: 80px;
+		}
+	}	
+}
+.cookie-popup{
+	z-index: 99999999999;
+	position: fixed;
+	bottom: 0;
+	width: 100vw;
+	background-color: $color-white;
+	padding: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	box-shadow: 0px 0px 3px 0px $color-lgray;
+	&.invisible{
+		display: none
+	}
+	.p{
+		font-family: Lato-Regular;
+		font-size: 16px;
+	}
+	.btn.small{
+		font-size: 14px;
+		text-transform: none;
+		padding: 0px 30px;
+		line-height: 30px;
+		height: 30px;
+	}
+}
 @import "admin"; // Styles for admin
 @import "media"; // Always at the end

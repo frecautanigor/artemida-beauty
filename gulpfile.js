@@ -41,7 +41,10 @@ gulp.task('scripts', function() {
 		'app/libs/Vide-master/dist/jquery.vide.min.js',
 		'app/libs/slick-1.8.1/slick/slick.min.js',
 		'app/libs/jquery-modal-master/jquery.modal.min.js',
+		'app/libs/addnew-lib/js/backtop-modernizr.js',
 		'app/libs/jquery-validation-1.19.0/dist/jquery.validate.min.js',
+		'app/libs/jQuery-ShowPopupOnlyOnce/jquery.firstVisitPopup.min.js',
+		'app/libs/smoth-scroll.js',
 		'app/js/common.js', // Always at the end
 		])
 	.pipe(concat('scripts.min.js'))
