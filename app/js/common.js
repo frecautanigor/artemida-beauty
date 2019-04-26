@@ -95,7 +95,7 @@ $( document ).ready(function() {
 
 	//add bg for nav on scrolling
 	$(function() {
-		var nav = $('nav');
+		var nav = $('.sticky');
 		$(window).scroll(function() {    
 			var scroll = $(window).scrollTop();
 
@@ -345,12 +345,12 @@ $( document ).ready(function() {
 	});
 
 	// smoth scroll
-	$(document).ready(function() {
-		try {
-			$.browserSelector();
-			if ($("html").hasClass("chrome")) {
-				$.smoothScroll();
-			}
-		} catch (err) {};
-	});
+	// $(document).ready(function() {
+	// 	try {
+	// 		$.browserSelector();
+	// 		if ($("html").hasClass("chrome")) {
+	// 			$.smoothScroll();
+	// 		}
+	// 	} catch (err) {};
+	// });
 });
