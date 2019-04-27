@@ -39,8 +39,136 @@
 
 <body>
 
+	<div class="cookie-popup">	
+		<p class="p">Acest site utilizează cookie-uri. Pentru a vă oferi cea mai bună experiență posibilă. Navigarea ulterioară este echivalentă cu citirea și acceptarea acestui termen.</p>		
+	</div>
+
+	<div id="p_prldr" class="preloader">
+		<div class="contpre">
+			<img src="img/preloader.svg" alt="" class="svg_anm">
+			<h1 class="h1">Pagina se încarcă</h1>
+		</div>
+	</div>
+
+	<div id="call" class="modal">
+		<h1 class="h1">Comandă un apel!</h1>
+		<form action="" id="form-call" class="modal__call">
+			<div class="form-input"><input type="text" name="name" placeholder="Nume Prenume"></div>
+			<div class="form-input"><input type="text" name="phone" placeholder="Telefon"></div>
+			<button class="btn">Comandă apel</button>
+			<a href="tel:+37368826666" class="btn call"><span class="icon-phone"></span> Apel direct</a>
+		</form>
+	</div>
+
+	<div id="scheduling" class="modal">
+		<h1 class="h1">Programare Serviciu!</h1>
+		<form action="" class="modal__scheldule" id="schelduling__form">
+
+			<div class="modal__scheldule-right">
+
+				<select class="selectbox" name="select">
+					<option value="">Fitness Gym</option>
+					<option value="">Cosmetologie</option>
+					<option value="">Frizerie</option>
+					<option value="">Solariu</option>
+					<option value="">Saună</option>
+				</select>
+
+				<select class="selectbox" name="select">
+					<option value="">Instructor 1</option>
+					<option value="">Instructor 2</option>
+					<option value="">Instructor 3</option>
+					<option value="">Instructor 4</option>
+					<option value="">Instructor 5</option>
+				</select>
+
+				<div class="form-textarea">
+					<textarea name="message" placeholder="Indicații / Preferințe"></textarea>
+				</div>
+				
+			</div>
+
+			<div class="modal__scheldule-left">
+				<div class="form-input name"><input type="text" name="name" placeholder="Nume Prenume"></div>
+				<div class="form-input"><input type="text" name="phone" placeholder="Telefon"></div>
+				<div class="form-input"><input type="text" name="mail" placeholder="Mail"></div>
+				<button class="btn">Programare</button>
+			</div>
+
+		</form>
+	</div>
+
+	<div id="testimonial" class="modal">
+		<h1 class="h1">Scrie o recenzie!</h1>
+		<form action="" class="modal__testimonial" id="testimonial__form">
+
+			<div class="modal__testimonial-right">
+
+				<div class="file-upload">
+					<div class="file-select">
+						<div class="file-select-button fileName">Imaginea dvs.</div>
+						<div class="file-select-name noFile">...</div> 
+						<input type="file" accept="image/*" name="choseFile" class="chooseFile">
+					</div>
+				</div>
+
+				<div class="form-textarea">
+					<textarea name="message" placeholder="Recenzie"></textarea>
+				</div>
+				
+			</div>
+
+			<div class="modal__testimonial-left">
+				<div class="form-input name"><input type="text" name="name" placeholder="Nume Prenume"></div>
+				<div class="form-input"><input type="text" name="phone" placeholder="Telefon"></div>
+				<button class="btn">Trimite</button>
+			</div>
+
+		</form>
+	</div>
+
+	<div id="career" class="modal">
+		<h1 class="h1">aplică posturi vacante!</h1>
+		<form action="" class="modal__career" id="career__form">
+
+			<div class="modal__career-right">
+				
+				<select class="selectbox" placeholder="">
+					<option value="">Antrenor</option>
+					<option value="">Cosmetolog</option>
+					<option value="">Frizer</option>
+					<option value="">etc</option>
+					<option value="">etc</option>
+				</select>
+
+				<div class="form-input name"><input type="text" name="name" placeholder="Nume Prenume"></div>
+				<div class="form-input"><input type="text" name="phone" placeholder="Telefon"></div>
+				<div class="form-input"><input type="text" name="mail" placeholder="Mail"></div>
+				
+			</div>
+
+			<div class="modal__career-left">
+
+				<div class="form-textarea">
+					<textarea name="message" placeholder="Despre d-voastră..."></textarea>
+				</div>
+				
+				<div class="file-upload">
+					<div class="file-select">
+						<div class="file-select-button fileName">Încarcă CV</div>
+						<div class="file-select-name noFile">...</div> 
+						<input type="file" name="chooseFile" class="chooseFile">
+					</div>
+				</div>
+
+				<button class="btn reverseg">Aplică</button>
+			</div>
+
+		</form>
+	</div>
+
 	<header data-vide-bg="video/artemida">
-		<nav class="transparent">
+		<nav class="sticky transparent">
 
 			<button class="hamburger hamburger--slider" type="button">
 			  <span class="hamburger-box">
@@ -62,8 +190,8 @@
 			</div>
 
 			<div class="social">
-				<a href="https://www.instagram.com/artemida.balti/" target="_blank" class="insta"><span class="icon-instagram"></span></a>
 				<a href="https://www.facebook.com/artem1damd" target="_blank" class="fb"><span class="icon-facebook"></span></a>
+				<a href="https://www.instagram.com/artemida.balti/" target="_blank" class="insta"><span class="icon-instagram"></span></a>
 			</div>
 
 		</nav>
@@ -152,6 +280,19 @@
 			
 		</section>
 
+		<section class="newsletter">
+			<h1 class="h1">Aboneazăte la newsletter</h1>
+			<form action="" id="newsletter__form">
+				<div class="form-input"><input type="text" name="mail" placeholder="Mailul dumneavoastră"></div>
+				<button class="btn reverse">Abonare</button>
+			</form>
+			<div class="follow">
+				<p>Follow:</p>
+				<a href="https://www.facebook.com/artem1damd" target="_blank" class="fb"><span class="icon-facebook"></span></a>
+				<a href="https://www.instagram.com/artemida.balti/" target="_blank" class="insta"><span class="icon-instagram"></span></a>
+			</div>
+		</section>
+
 		<section class="footer__main">
 
 			<div class="container">
@@ -202,9 +343,9 @@
 							<h2 class="h2 grd">Linkuri Utile</h2>
 							<div class="links">
 								<a href="" class="first"> > Orar</a>
-								<a href=""> > Programare</a>
-								<a href=""> > Carieră</a>
-								<a href=""> > Lasă o recenzie</a>
+								<a href="#scheduling" rel="modal:open"> > Programare</a>
+								<a href="#career" rel="modal:open"> > Carieră</a>
+								<a href="#testimonial" rel="modal:open"> > Lasă o recenzie</a>
 							</div>
 						</div>
 					</div>
@@ -224,6 +365,15 @@
 		</section>
 
 	</footer>
+	
+
+	<div class="absolute__elements">
+		<a href="#call" rel="modal:open" class="absolute__elements-link call"><span class="icon-phone"></span></a>
+		<a href="#scheduling" rel="modal:open" class="absolute__elements-link testimonial"><span class="icon-appointment"></span></a>
+		<a href="#0" class="cd-top btntop" style="background-image: url(img/up-arrow.svg)">Top</a>
+	</div>
+
+
 
 	<script src="js/scripts.min.js"></script>
 

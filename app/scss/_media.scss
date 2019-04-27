@@ -10,21 +10,20 @@
 
 // ≥992px
 @include media-breakpoint-down(md) {
-	header{
-		nav{
-			.hamburger{display: block;}
-			.links{
-				display: none;
-				&.show{
-					display: flex;
-					width: 100vw;
-					flex-direction: column;
-					position: absolute;
-					top: 60px;
-					background-color: rgba($color-dark, .95);
-					a{
-						margin: 10px;
-					}
+
+	nav{
+		.hamburger{display: block;}
+		.links{
+			display: none;
+			&.show{
+				display: flex;
+				width: 100vw;
+				flex-direction: column;
+				position: absolute;
+				top: 60px;
+				background-color: rgba($color-dark, .95);
+				a{
+					margin: 10px;
 				}
 			}
 		}
@@ -47,7 +46,39 @@
 
 // ≥576px
 @include media-breakpoint-down(xs) {
-
+	.newsletter{
+		form{
+			.form-input, .btn{margin: 15px;}			
+		}
+	}
+	.modal{
+		&__scheldule, &__testimonial, &__career{
+			flex-direction: column;
+		}
+	}
+	.absolute__elements{
+		right: 15px;
+		&-link{
+			height: 40px;
+			width: 40px;
+			&::after{
+				height: 60px;
+				width: 60px;
+			}
+			&:hover{
+				color: $color-white;
+				&::after{
+					height: 50px;
+					width: 50px;
+				}
+			}	
+		}
+		.cd-top {
+			margin-top: 5px;
+			height: 20px;
+			width: 40px;
+		}
+	}
 }
 
 

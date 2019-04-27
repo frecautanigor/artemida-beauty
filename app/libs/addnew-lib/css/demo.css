@@ -1,0 +1,14 @@
+body{
+	font-family: arial;
+}
+
+.main{
+	width: 960px;
+	margin: 0 auto;
+	background-color: #ddd;
+}
+
+p{
+	padding: 20px 30px;
+	color: #222
+}

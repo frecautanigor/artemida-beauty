@@ -1,0 +1,97 @@
+.cd-top {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  /* image replacement properties */
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+  background: rgba(0, 150, 136, .8) no-repeat center 50%;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity .3s 0s, visibility 0s .3s;
+  -moz-transition: opacity .3s 0s, visibility 0s .3s;
+  transition: opacity .3s 0s, visibility 0s .3s;
+}
+.cd-top.cd-is-visible, .cd-top.cd-fade-out, .no-touch .cd-top:hover {
+  -webkit-transition: opacity .3s 0s, visibility 0s 0s;
+  -moz-transition: opacity .3s 0s, visibility 0s 0s;
+  transition: opacity .3s 0s, visibility 0s 0s;
+}
+.cd-top.cd-is-visible {
+  /* the button becomes visible */
+  visibility: visible;
+  opacity: 1;
+}
+.cd-top.cd-fade-out {
+  /* if the user keeps scrolling down, the button is out of focus and becomes less visible */
+  opacity: .5;
+}
+.no-touch .cd-top:hover {
+  background-color: #111;
+  opacity: 1;
+}
+@media only screen and (min-width: 768px) {
+  .cd-top {
+    right: 15px;
+    bottom: 15px;
+  }
+}
+
+/*preloader*/
+
+#p_prldr{
+  margin: 0;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background: #151515;
+  z-index: 999999999999999999999999999999999;
+}
+
+ 
+.contpre{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+width: fit-content;
+
+}
+ 
+#p_prldr .svg_anm {
+position: absolute;
+width: 41px;
+height: 41px;
+background: center center no-repeat;
+background-size: 41px;    
+color: red;}
+
+/*sass*/
+/*#p_prldr
+  position: fixed
+  z-index: 99999999999999999999
+  background-color: $black
+  display: flex
+  width: 100vw
+  height: 100vh
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  .contpre
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    .svg_anm
+      display: block !important
+      width: 80px
+      height: 80px*/

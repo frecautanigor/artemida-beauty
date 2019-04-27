@@ -95,7 +95,7 @@ $( document ).ready(function() {
 
 	//add bg for nav on scrolling
 	$(function() {
-		var nav = $('nav');
+		var nav = $('.sticky');
 		$(window).scroll(function() {    
 			var scroll = $(window).scrollTop();
 
@@ -146,4 +146,211 @@ $( document ).ready(function() {
 		]
 	});
 
+	// btn back to top
+	var offset = 300,
+		offset_opacity = 1200,
+		scroll_top_duration = 700,
+		$back_to_top = $('.cd-top');
+	$(window).scroll(function(){
+		( $(this).scrollTop() > offset ) ? $back_to_top.addClass('cd-is-visible') : $back_to_top.removeClass('cd-is-visible cd-fade-out');
+		if( $(this).scrollTop() > offset_opacity ) { 
+			$back_to_top.addClass('cd-fade-out');
+		}
+	});
+	$back_to_top.on('click', function(event){
+		event.preventDefault();
+		$('body,html').animate({
+			scrollTop: 0 ,
+		 	}, scroll_top_duration
+		);
+	});
+
+	// validator
+	$( "#form-call" ).validate({
+		rules: {
+		// no quoting necessary
+			name: {
+				required: true,
+				minlength: 5
+			},
+			phone: {
+				required: true,
+				digits: true,
+				minlength: 9
+			},
+		},
+		messages: {
+			name: {
+				required:"Cîmp Obligatoriu",
+				minlength: "Minim 5 caractere !"
+			},
+			phone: {
+				required: "Cîmp Obligatoriu",
+				digits: "Doar cifre",
+				minlength: "Minim 9 cifre !",
+			},                                           
+		},
+	});
+
+	$( "#newsletter__form" ).validate({
+		rules: {
+			mail: {
+				required: true,
+				email: true,
+			},
+		},
+		messages: {
+			mail: {
+				required:"Mail Obligatoriu",
+				email: "Mail invalid"
+			},
+		},
+	});
+
+	$( "#schelduling__form" ).validate({
+		rules: {
+			message: {
+					required: true,
+					minlength: 10
+			},
+			name: {
+				required: true,
+				minlength: 5
+			},
+			phone: {
+				required: true,
+				digits: true,
+				minlength: 9
+			},
+			mail: {
+				required: true,
+				email: true,
+			},
+		},
+		messages: {
+			message: {
+					required:"Cîmp Obligatoriu",
+					minlength: 10
+			},
+			name: {
+				required:"Cîmp Obligatoriu",
+				minlength: "Minim 5 caractere !"
+			},
+			phone: {
+				required: "Cîmp Obligatoriu",
+				digits: "Doar cifre",
+				minlength: "Minim 9 cifre !",
+			},
+			mail: {
+				required:"Mail Obligatoriu",
+				email: "Mail invalid"
+			},
+		},
+	});
+
+	$( "#testimonial__form" ).validate({
+		rules: {
+			message: {
+				required: true,
+				minlength: 10
+			},
+			name: {
+				required: true,
+				minlength: 5
+			},
+			phone: {
+				required: true,
+				digits: true,
+				minlength: 9
+			},
+			choseFile: {
+				required: true,
+			},
+		},
+		messages: {
+			message: {
+					required:"Cîmp Obligatoriu",
+					minlength: 10
+			},
+			name: {
+				required:"Cîmp Obligatoriu",
+				minlength: "Minim 5 caractere !"
+			},
+			phone: {
+				required: "Cîmp Obligatoriu",
+				digits: "Doar cifre",
+				minlength: "Minim 9 cifre !",
+			},
+			choseFile: {
+				required: "Alege imaginea."
+			}
+		},
+	});
+
+	$( "#career__form" ).validate({
+		rules: {
+			message: {
+				required: true,
+				minlength: 10
+			},
+			name: {
+				required: true,
+				minlength: 5
+			},
+			phone: {
+				required: true,
+				digits: true,
+				minlength: 9
+			},
+			mail: {
+				required: true,
+				email: true,
+			},
+		},
+		messages: {
+			message: {
+				required:"Cîmp Obligatoriu",
+				minlength: "Minim 10 caractere"
+			},
+			name: {
+				required:"Cîmp Obligatoriu",
+				minlength: "Minim 5 caractere !"
+			},
+			phone: {
+				required: "Cîmp Obligatoriu",
+				digits: "Doar cifre",
+				minlength: "Minim 9 cifre !",
+			},
+			mail: {
+				required:"Mail Obligatoriu",
+				email: "Mail invalid"
+			},
+		},
+	});
+
+	// preloader
+		$(window).on('load', function () {
+	        var $preloader = $('#p_prldr'),
+	            $svg_anm   = $preloader.find('.svg_anm');
+	        $svg_anm.fadeOut();
+	        $preloader.delay(2000).fadeOut('slow');
+	    });
+
+	// cookies
+	$(function () {
+	$('.cookie-popup').firstVisitPopup({
+	  cookieName : 'homepage',
+	  showAgainSelector: '#show-message'
+	 });
+	});
+
+	// smoth scroll
+	// $(document).ready(function() {
+	// 	try {
+	// 		$.browserSelector();
+	// 		if ($("html").hasClass("chrome")) {
+	// 			$.smoothScroll();
+	// 		}
+	// 	} catch (err) {};
+	// });
 });
