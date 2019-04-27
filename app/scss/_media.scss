@@ -41,7 +41,15 @@
 
 // ≥768px
 @include media-breakpoint-down(sm) {
-
+	.values-row{
+		height: 900px;
+		.filter{
+			height: 900px;
+		}
+	}
+	.values{
+		flex-direction: column;
+	}
 }
 
 // ≥576px
