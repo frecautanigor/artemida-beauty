@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+	<!-- <base href="img/favicon/"> -->
+
+	<title>Servicii</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	
+	<!-- Template Basic Images Start -->
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="img/favicon/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+	<link rel="manifest" href="img/favicon/manifest.json">
+	<!-- Template Basic Images End -->
+	
+	<!-- Custom Browsers Color Start -->
+	<meta name="theme-color" content="#881313">
+	<!-- Custom Browsers Color End -->
+
+	<link rel="stylesheet" href="css/main.min.css">
+</head>
+
+<body>
+
+	<div class="cookie-popup">	
+		<p class="p">Acest site utilizează cookie-uri. Pentru a vă oferi cea mai bună experiență posibilă. Navigarea ulterioară este echivalentă cu citirea și acceptarea acestui termen.</p>		
+	</div>
+
+	<div id="p_prldr" class="preloader">
+		<div class="contpre">
+			<img src="img/preloader.svg" alt="" class="svg_anm">
+			<h1 class="h1">Pagina se încarcă</h1>
+		</div>
+	</div>
+
+	<div id="call" class="modal">
+		<h1 class="h1">Comandă un apel!</h1>
+		<form action="" id="form-call" class="modal__call">
+			<div class="form-input"><input type="text" name="name" placeholder="Nume Prenume"></div>
+			<div class="form-input"><input type="text" name="phone" placeholder="Telefon"></div>
+			<button class="btn">Comandă apel</button>
+			<a href="tel:+37368826666" class="btn call"><span class="icon-phone"></span> Apel direct</a>
+		</form>
+	</div>
+
+	<div id="scheduling" class="modal">
+		<h1 class="h1">Programare Serviciu!</h1>
+		<form action="" class="modal__scheldule" id="schelduling__form">
+
+			<div class="modal__scheldule-right">
+
+				<select class="selectbox" name="select">
+					<option value="">Fitness Gym</option>
+					<option value="">Cosmetologie</option>
+					<option value="">Frizerie</option>
+					<option value="">Solariu</option>
+					<option value="">Saună</option>
+				</select>
+
+				<select class="selectbox" name="select">
+					<option value="">Instructor 1</option>
+					<option value="">Instructor 2</option>
+					<option value="">Instructor 3</option>
+					<option value="">Instructor 4</option>
+					<option value="">Instructor 5</option>
+				</select>
+
+				<div class="form-textarea">
+					<textarea name="message" placeholder="Indicații / Preferințe"></textarea>
+				</div>
+				
+			</div>
+
+			<div class="modal__scheldule-left">
+				<div class="form-input name"><input type="text" name="name" placeholder="Nume Prenume"></div>
+				<div class="form-input"><input type="text" name="phone" placeholder="Telefon"></div>
+				<div class="form-input"><input type="text" name="mail" placeholder="Mail"></div>
+				<button class="btn">Programare</button>
+			</div>
+
+		</form>
+	</div>
+
+	<div id="testimonial" class="modal">
+		<h1 class="h1">Scrie o recenzie!</h1>
+		<form action="" class="modal__testimonial" id="testimonial__form">
+
+			<div class="modal__testimonial-right">
+
+				<div class="file-upload">
+					<div class="file-select">
+						<div class="file-select-button fileName">Imaginea dvs.</div>
+						<div class="file-select-name noFile">...</div> 
+						<input type="file" accept="image/*" name="choseFile" class="chooseFile">
+					</div>
+				</div>
+
+				<div class="form-textarea">
+					<textarea name="message" placeholder="Recenzie"></textarea>
+				</div>
+				
+			</div>
+
+			<div class="modal__testimonial-left">
+				<div class="form-input name"><input type="text" name="name" placeholder="Nume Prenume"></div>
+				<div class="form-input"><input type="text" name="phone" placeholder="Telefon"></div>
+				<button class="btn">Trimite</button>
+			</div>
+
+		</form>
+	</div>
+
+	<div id="career" class="modal">
+		<h1 class="h1">aplică posturi vacante!</h1>
+		<form action="" class="modal__career" id="career__form">
+
+			<div class="modal__career-right">
+				
+				<select class="selectbox" placeholder="">
+					<option value="">Antrenor</option>
+					<option value="">Cosmetolog</option>
+					<option value="">Frizer</option>
+					<option value="">etc</option>
+					<option value="">etc</option>
+				</select>
+
+				<div class="form-input name"><input type="text" name="name" placeholder="Nume Prenume"></div>
+				<div class="form-input"><input type="text" name="phone" placeholder="Telefon"></div>
+				<div class="form-input"><input type="text" name="mail" placeholder="Mail"></div>
+				
+			</div>
+
+			<div class="modal__career-left">
+
+				<div class="form-textarea">
+					<textarea name="message" placeholder="Despre d-voastră..."></textarea>
+				</div>
+				
+				<div class="file-upload">
+					<div class="file-select">
+						<div class="file-select-button fileName">Încarcă CV</div>
+						<div class="file-select-name noFile">...</div> 
+						<input type="file" name="chooseFile" class="chooseFile">
+					</div>
+				</div>
+
+				<button class="btn reverseg">Aplică</button>
+			</div>
+
+		</form>
+	</div>
+
+	<nav class="static">
+
+		<button class="hamburger hamburger--slider" type="button">
+		  <span class="hamburger-box">
+		    <span class="hamburger-inner"></span>
+		  </span>
+		</button>
+
+		<a href="" class="logo"><span class="icon-logo"></span></a>
+
+		<div class="links animated fadeIn">
+			<a href="">Despre Noi</a>
+			<a href="">Echipa</a>
+			<a href="">Servicii</a>
+			<a href="">Promo</a>
+			<a href="">Galerie</a>
+			<a href="">Recenzii</a>
+			<a href="">Orar</a>
+			<a href="">Contacte</a>
+		</div>
+
+		<div class="social">
+			<a href="https://www.facebook.com/artem1damd" target="_blank" class="fb"><span class="icon-facebook"></span></a>
+			<a href="https://www.instagram.com/artemida.balti/" target="_blank" class="insta"><span class="icon-instagram"></span></a>
+		</div>
+
+	</nav>
+
+
+	<div class="container-fluid">
+
+		<div class="row">
+			<div class="page-title">
+				<h1 class="h1">Serviciile Noastre</h1>
+			</div>
+		</div>
+
+		<div class="row services">
+
+			<div class="col-12 col-md-6 col-img order-md-first">
+				<div class="services__img" style="background-image: url(img/serv_1.jpg);"></div>
+			</div>
+
+			<div class="col-12 col-md-6 order-first">
+				<div class="services__content">
+					<h2 class="h2">Sala de forță</h2>
+					<h3 class="h3">Recent Renovată, sala de forță este gata să primească persoane otivate care ne inspiră spre realizări noi.</h3>
+
+					<div class="services__description">
+						<span class="icon-muscle"></span>
+						<p class="p">Atmosfera perfectă pentru mușchii dumneavoastră. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+					</div>
+
+					<div class="services__description">
+						<span class="icon-barbell"></span>
+						<p class="p">Dotați cu cea mai nouă fitness tehnică, vă provocăm la noi rezultate și succese. Sunteți gata să le obținem împreună? Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+					</div>
+
+					<div class="services__description">
+						<span class="icon-trainer"></span>
+						<p class="p">Persoana care nu acceptă scuzele este antrenorul personal, antrenorul perfect este în echipa noastră, nu e nevoie să mai cauți, vino la noi! Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+					</div>
+
+					<div class="services__description">
+						<span class="icon-calendar"></span>
+						<p class="p">Gestionarea timpului este un aspect important pentru persoanele care dorescă să-și atingă scopurile de aceea noi vă propunem la dispoziție flexibilitatea. Lorem Ipsum is simply dummy text of the printing.</p>
+					</div>
+					
+					<form action="" class="services__form">
+						<div class="form-input"><input type="text" name="mail" placeholder="0XXXXXXXX"></div>
+						<button class="btn">Alte&nbsp;Detalii</button>
+					</form>
+
+				</div>
+			</div>
+			
+		</div>
+
+	</div>
+
+	<footer class="footer">
+
+		<section class="footer__partners">
+
+			<div class="footer__partners-img">
+				<img src="img/impulse.png" alt="">
+			</div>
+
+			<div class="footer__partners-img">
+				<img src="img/technogym.png" alt="">
+			</div>
+
+			<div class="footer__partners-img">
+				<img src="img/toorx.png" alt="">
+			</div>
+
+			<div class="footer__partners-img">
+				<img src="img/weider.png" alt="">
+			</div>
+
+			<div class="footer__partners-img">
+				<img src="img/dikson.png" alt="">
+			</div>
+
+			<div class="footer__partners-img">
+				<img src="img/wella.png" alt="">
+			</div>
+
+			<div class="footer__partners-img">
+				<img src="img/ericson.png" alt="">
+			</div>
+
+			<div class="footer__partners-img">
+				<img src="img/estel.png" alt="">
+			</div>
+
+			<div class="footer__partners-img">
+				<img src="img/londa.png" alt="">
+			</div>
+
+			<div class="footer__partners-img">
+				<img src="img/schwarzkopf.png" alt="">
+			</div>
+
+			<div class="footer__partners-img">
+				<img src="img/janssen.png" alt="">
+			</div>
+			
+		</section>
+
+		<section class="newsletter">
+			<h1 class="h1">Aboneazăte la newsletter</h1>
+			<form action="" id="newsletter__form">
+				<div class="form-input"><input type="text" name="mail" placeholder="Mailul dumneavoastră"></div>
+				<button class="btn reverse">Abonare</button>
+			</form>
+			<div class="follow">
+				<p>Follow:</p>
+				<a href="https://www.facebook.com/artem1damd" target="_blank" class="fb"><span class="icon-facebook"></span></a>
+				<a href="https://www.instagram.com/artemida.balti/" target="_blank" class="insta"><span class="icon-instagram"></span></a>
+			</div>
+		</section>
+
+		<section class="footer__main">
+
+			<div class="container">
+				<div class="row justify-content-around">
+
+					<div class="col-12 col-sm-6 col-lg-3">
+						<div class="footer__main-about">
+							<h2 class="h2 grd">Despre Noi</h2>
+							<p class="p">
+								Noi suntem Artemida, primul complex multifuncțional din orașul Bălți. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+							</p>
+						</div>
+					</div>
+
+					<div class="col-12 col-sm-6 col-lg-3">
+						<div class="footer__main-contacts">
+							<h2 class="h2 grd">Contacte</h2>
+							<div class="details">
+
+								<div class="location">
+									<span class="icon-location"></span>
+									<div class="adress">
+										<div class="city">Orașul Bălți 3100</div>
+										<div class="street">str. Bulgară 138A</div>
+									</div>
+								</div>
+
+								<div class="phones">
+									<span class="icon-phone"></span>
+									<div class="numbers">
+										<div class="stationary"><a href="tel:+37323185502">0231 85 502</a></div>
+										<div class="mobile"><a href="tel:+37368826666">0688 2 6666</a></div>
+									</div>
+								</div>
+
+								<div class="mail">
+									<span class="icon-email"></span>		
+									<div class="e-adress"><a href="mailto:+37323185502">artemida-beauty@gmail.com</a></div>		
+								</div>
+
+							</div>
+							
+						</div>
+					</div>
+					
+					<div class="col-12 col-sm-6 col-lg-3">
+						<div class="footer__main-useful">
+							<h2 class="h2 grd">Linkuri Utile</h2>
+							<div class="links">
+								<a href="" class="first"> > Orar</a>
+								<a href="#scheduling" rel="modal:open"> > Programare</a>
+								<a href="#career" rel="modal:open"> > Carieră</a>
+								<a href="#testimonial" rel="modal:open"> > Lasă o recenzie</a>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-12 col-sm-6 col-lg-3">
+						<div class="footer__main-fb">
+							<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fartem1damd&tabs&width=260&height=240&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="215" height="240" style="margin-top:30px;border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</section>
+
+		<section class="footer__creators">
+			<p>Designed & developed with <span class="icon-heart"></span> by <a href="https://www.facebook.com/danielpascari" target="_blank">@danielpascari</a> and <a href="https://www.facebook.com/frecautanigor" target="_blank">@igorfrecautan</a>.</p>
+		</section>
+
+	</footer>
+	
+
+	<div class="absolute__elements" >
+		<a href="#call" rel="modal:open" class="absolute__elements-link call"><span class="icon-phone"></span></a>
+		<a href="#scheduling" rel="modal:open" class="absolute__elements-link testimonial"><span class="icon-appointment"></span></a>
+		<a href="#0" class="cd-top btntop" style="background-image: url(img/up-arrow.svg)">Top</a>
+	</div>
+
+
+
+	<script src="js/scripts.min.js"></script>
+
+</body>
+</html>
