@@ -353,11 +353,11 @@ a {
 
 .form-input {
     border-radius: 99px;
-    height: 100%;
     width: 100%;
     padding: $border;
     @include gradient();
     display: inline-block;
+    margin-bottom: 25px;
 
     input {
         width: 100%;
@@ -384,11 +384,15 @@ a {
         resize: none;
         outline: none;
         border: 0;
+        margin-bottom: 25px;
         padding: 0 10px;
     }
 }
 
-label.error{
+.section {
+    padding-bottom: 45px;
+
+    label.error{
     position: absolute;
     display: flex;
     font-family: Lato-Regular;
