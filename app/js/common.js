@@ -207,6 +207,91 @@ $( document ).ready(function() {
 		},
 	});
 
+	$( "#services__form-1" ).validate({
+		rules: {
+			phone: {
+				required: true,
+				digits: true,
+				minlength: 9
+			},
+		},
+		messages: {
+			phone: {
+				required: "Cîmp Obligatoriu",
+				digits: "Doar cifre",
+				minlength: "Minim 9 cifre !",
+			},
+		},
+	});
+
+	$( "#services__form-2" ).validate({
+		rules: {
+			phone: {
+				required: true,
+				digits: true,
+				minlength: 9
+			},
+		},
+		messages: {
+			phone: {
+				required: "Cîmp Obligatoriu",
+				digits: "Doar cifre",
+				minlength: "Minim 9 cifre !",
+			},
+		},
+	});
+
+	$( "#services__form-3" ).validate({
+		rules: {
+			phone: {
+				required: true,
+				digits: true,
+				minlength: 9
+			},
+		},
+		messages: {
+			phone: {
+				required: "Cîmp Obligatoriu",
+				digits: "Doar cifre",
+				minlength: "Minim 9 cifre !",
+			},
+		},
+	});
+
+	$( "#services__form-4" ).validate({
+		rules: {
+			phone: {
+				required: true,
+				digits: true,
+				minlength: 9
+			},
+		},
+		messages: {
+			phone: {
+				required: "Cîmp Obligatoriu",
+				digits: "Doar cifre",
+				minlength: "Minim 9 cifre !",
+			},
+		},
+	});
+
+	$( "#services__form-5" ).validate({
+		rules: {
+			phone: {
+				required: true,
+				digits: true,
+				minlength: 9
+			},
+		},
+		messages: {
+			phone: {
+				required: "Cîmp Obligatoriu",
+				digits: "Doar cifre",
+				minlength: "Minim 9 cifre !",
+			},
+		},
+	});
+
 	$( "#schelduling__form" ).validate({
 		rules: {
 			message: {
