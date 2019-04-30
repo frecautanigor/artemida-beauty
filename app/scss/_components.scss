@@ -410,3 +410,15 @@ a {
         }
     }
 }
+
+.img-responsive{
+    display: block;
+    max-width: 100%;
+    height: auto;
+    &.img-width{
+        width: 100%;
+    }
+    &.img-height{
+        height: 100%;
+    }
+}
