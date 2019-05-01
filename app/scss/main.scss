@@ -780,7 +780,9 @@ a.link__album{
 			background-color: rgba($color-dark, .7);
 		}
 	}
-
+}
+.contact-map{
+	filter: grayscale(90%);
 }
 @import "admin"; // Styles for admin
 @import "media"; // Always at the end
