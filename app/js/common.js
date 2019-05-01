@@ -439,4 +439,17 @@ $( document ).ready(function() {
 		} catch (err) {};
 	});
 
+	// fancy-box
+	$('[data-fancybox="gallery"]').fancybox({
+		thumbs: false
+	});
+
+	// masonry
+	$(".grid").imagesLoaded(function() {
+		$(".grid").masonry({
+			itemSelector: ".grid-item",
+			columnWidth: ".grid-item",
+		});
+	});
+
 });

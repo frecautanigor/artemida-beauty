@@ -45,6 +45,9 @@ gulp.task('scripts', function() {
 		'app/libs/jquery-validation-1.19.0/dist/jquery.validate.min.js',
 		'app/libs/jQuery-ShowPopupOnlyOnce/jquery.firstVisitPopup.min.js',
 		'app/libs/smoth-scroll.js',
+		'app/libs/fancybox-master/dist/jquery.fancybox.min.js',
+		'app/libs/masonry-docs/masonry.pkgd.min.js',
+		'app/libs/imageloaded.js',
 		'app/js/common.js', // Always at the end
 		])
 	.pipe(concat('scripts.min.js'))
