@@ -648,11 +648,6 @@ nav {
 		.form-input, .btn{
 			margin: 0 15px;
 		}
-		label.error{
-			position: absolute;
-			margin-top: 45px;
-			margin-left: -190px;
-		}
 	}
 }
 
@@ -783,6 +778,29 @@ a.link__album{
 }
 .contact-map{
 	filter: grayscale(90%);
+}
+.contact__page{
+	&-line{
+		font-size: 24px;
+		color: $color-dark;
+		display: flex;
+		align-items: center;
+		margin: 15px 0;
+	}
+	&-type{
+		display: flex;
+		align-items: center;
+		@include text-gradient();
+	}
+	&-form{
+		margin: 30px 0;
+		label.error{
+		    position: absolute;
+		    left: 0;
+		    margin-left: 30px;
+		    margin-top: 35px;
+		}
+	}
 }
 @import "admin"; // Styles for admin
 @import "media"; // Always at the end

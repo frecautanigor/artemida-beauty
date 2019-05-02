@@ -91,6 +91,11 @@
 			width: 40px;
 		}
 	}
+	.contact__page{
+		&-line{
+			flex-direction: column;
+		}
+	}
 }
 
 

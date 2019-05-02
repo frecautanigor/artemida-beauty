@@ -413,6 +413,47 @@ $( document ).ready(function() {
 		},
 	});
 
+	$( "#contact__page-form" ).validate({
+		rules: {
+			message: {
+				required: true,
+				minlength: 10
+			},
+			name: {
+				required: true,
+				minlength: 5
+			},
+			phone: {
+				required: true,
+				digits: true,
+				minlength: 9
+			},
+			mail: {
+				required: true,
+				email: true,
+			},
+		},
+		messages: {
+			message: {
+				required:"Cîmp Obligatoriu",
+				minlength: "Minim 10 caractere"
+			},
+			name: {
+				required:"Cîmp Obligatoriu",
+				minlength: "Minim 5 caractere !"
+			},
+			phone: {
+				required: "Cîmp Obligatoriu",
+				digits: "Doar cifre",
+				minlength: "Minim 9 cifre !",
+			},
+			mail: {
+				required:"Mail Obligatoriu",
+				email: "Mail invalid"
+			},
+		},
+	});
+
 	// preloader
 	$(window).on('load', function () {
         var $preloader = $('#p_prldr'),
