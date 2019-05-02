@@ -207,6 +207,91 @@ $( document ).ready(function() {
 		},
 	});
 
+	$( "#services__form-1" ).validate({
+		rules: {
+			phone: {
+				required: true,
+				digits: true,
+				minlength: 9
+			},
+		},
+		messages: {
+			phone: {
+				required: "Cîmp Obligatoriu",
+				digits: "Doar cifre",
+				minlength: "Minim 9 cifre !",
+			},
+		},
+	});
+
+	$( "#services__form-2" ).validate({
+		rules: {
+			phone: {
+				required: true,
+				digits: true,
+				minlength: 9
+			},
+		},
+		messages: {
+			phone: {
+				required: "Cîmp Obligatoriu",
+				digits: "Doar cifre",
+				minlength: "Minim 9 cifre !",
+			},
+		},
+	});
+
+	$( "#services__form-3" ).validate({
+		rules: {
+			phone: {
+				required: true,
+				digits: true,
+				minlength: 9
+			},
+		},
+		messages: {
+			phone: {
+				required: "Cîmp Obligatoriu",
+				digits: "Doar cifre",
+				minlength: "Minim 9 cifre !",
+			},
+		},
+	});
+
+	$( "#services__form-4" ).validate({
+		rules: {
+			phone: {
+				required: true,
+				digits: true,
+				minlength: 9
+			},
+		},
+		messages: {
+			phone: {
+				required: "Cîmp Obligatoriu",
+				digits: "Doar cifre",
+				minlength: "Minim 9 cifre !",
+			},
+		},
+	});
+
+	$( "#services__form-5" ).validate({
+		rules: {
+			phone: {
+				required: true,
+				digits: true,
+				minlength: 9
+			},
+		},
+		messages: {
+			phone: {
+				required: "Cîmp Obligatoriu",
+				digits: "Doar cifre",
+				minlength: "Minim 9 cifre !",
+			},
+		},
+	});
+
 	$( "#schelduling__form" ).validate({
 		rules: {
 			message: {
@@ -328,13 +413,54 @@ $( document ).ready(function() {
 		},
 	});
 
+	$( "#contact__page-form" ).validate({
+		rules: {
+			message: {
+				required: true,
+				minlength: 10
+			},
+			name: {
+				required: true,
+				minlength: 5
+			},
+			phone: {
+				required: true,
+				digits: true,
+				minlength: 9
+			},
+			mail: {
+				required: true,
+				email: true,
+			},
+		},
+		messages: {
+			message: {
+				required:"Cîmp Obligatoriu",
+				minlength: "Minim 10 caractere"
+			},
+			name: {
+				required:"Cîmp Obligatoriu",
+				minlength: "Minim 5 caractere !"
+			},
+			phone: {
+				required: "Cîmp Obligatoriu",
+				digits: "Doar cifre",
+				minlength: "Minim 9 cifre !",
+			},
+			mail: {
+				required:"Mail Obligatoriu",
+				email: "Mail invalid"
+			},
+		},
+	});
+
 	// preloader
-		$(window).on('load', function () {
-	        var $preloader = $('#p_prldr'),
-	            $svg_anm   = $preloader.find('.svg_anm');
-	        $svg_anm.fadeOut();
-	        $preloader.delay(2000).fadeOut('slow');
-	    });
+	$(window).on('load', function () {
+        var $preloader = $('#p_prldr'),
+            $svg_anm   = $preloader.find('.svg_anm');
+        $svg_anm.fadeOut();
+        $preloader.delay(2000).fadeOut('slow');
+    });
 
 	// cookies
 	$(function () {
@@ -345,12 +471,26 @@ $( document ).ready(function() {
 	});
 
 	// smoth scroll
-	// $(document).ready(function() {
-	// 	try {
-	// 		$.browserSelector();
-	// 		if ($("html").hasClass("chrome")) {
-	// 			$.smoothScroll();
-	// 		}
-	// 	} catch (err) {};
-	// });
+	$(document).ready(function() {
+		try {
+			$.browserSelector();
+			if ($("html").hasClass("chrome")) {
+				$.smoothScroll();
+			}
+		} catch (err) {};
+	});
+
+	// fancy-box
+	$('[data-fancybox="gallery"]').fancybox({
+		thumbs: false
+	});
+
+	// masonry
+	$(".grid").imagesLoaded(function() {
+		$(".grid").masonry({
+			itemSelector: ".grid-item",
+			columnWidth: ".grid-item",
+		});
+	});
+
 });

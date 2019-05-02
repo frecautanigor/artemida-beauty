@@ -206,10 +206,11 @@ nav {
 		font-size: 14px;
 		color: $color-dark;
 		padding: 15px 0;
-		.icon-heart{font-size: 18px; color: $color-insta;}
+		.icon-heart{font-size: 18px; color: $color-testimonialered;}
 		p{margin: 0; text-align: center;}
 		a{
 			color: $color-dark;
+			@include transition(); 
 			&:hover{color: $color-fb;}
 		}
 	}
@@ -575,7 +576,14 @@ nav {
 	margin-top: 60px;
 	margin-bottom: 60px;
 	padding: 60px 15px;
-
+	height: 600px;
+	.filter{
+		height: 600px;
+		width: 100%;
+		position: absolute;
+		background-color: rgba($color-dark, .3);
+		margin-top: -60px;
+	}
 }
 .values{
 	display: flex;
@@ -590,12 +598,209 @@ nav {
 		color: $color-white;
 		width: 300px;
 	}
-	.filter{
+	.value{
+		padding: 30px;
+	}
+}
+.services{
+	.col-img{margin: 0;padding: 0;}
+	&__img{
 		width: 100%;
 		height: 100%;
-		background-color: $color-dark;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center center;
+	}
+	&__content{
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		padding: 30px 0;
+		.h3{
+			display: block;
+			max-width: 360px;
+			font-size: 18px;
+			text-align: center;
+			margin-bottom: 45px;
+		}
+	}
+	&__description{
+		display: flex;
+		align-items: center;
+		margin: 15px 0;
+		[class*="icon-"]{
+			@include text-gradient();
+			font-size: 32px;
+			margin: 0 15px;
+		}
+		.p{
+			max-width: 380px;
+			margin: 0 15px;
+		}
+	}
+	&__form{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: 30px 0;
+		.form-input, .btn{
+			margin: 0 15px;
+		}
 	}
 }
 
+.gallery{
+	padding-bottom: 30px;
+	&__nav{
+		width: 100vw;
+		display: flex;
+		justify-content: center;
+		margin-bottom: 30px;
+		&:before{
+			content: '';
+			height: 2px;
+			width: 100%;
+			position: absolute;
+			margin-top: 36px;
+			@include gradient();
+		}
+		&-link{
+			font-family: Montserrat-Regular;
+			font-size: 24px;
+			text-transform: uppercase;
+			width: 50%;
+			height: 36px;
+			text-align: center;
+			color: $color-dark;
+			@include transition();
+			&.active, &:hover{
+				color: $color-white;
+				@include gradient();
+				@include transition();
+			}
+		}
+	}
+}
+a.link__album{
+	display: block;
+	width: 100%;
+	box-shadow: 0px 0px 10px 0px $color-dark;
+	margin-bottom: 30px;
+	&:hover .filter{
+		opacity: .8
+	}
+	.img{
+		height: 250px;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center center;		
+	}
+	.filter{
+		height: 250px;
+		width: 100%;
+		background-color: $color-dark;
+		margin-top: -250px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		opacity: 0;
+		@include transition();
+		[class*="icon-"]{
+			font-size: 48px;
+			color: $color-white;
+		}
+	}
+	.h3{
+		font-size: 18px;
+		text-transform: uppercase;
+		font-family: Montserrat-Regular;
+		text-align: center;
+		padding: 15px 0;
+		color: $color-dark
+	}
+}
+.fancybox-container{
+	z-index: 9999999;
+}
+
+.preview-photo, .preview-video{
+	&:hover .effect{
+		opacity: 0
+	}
+	.image{
+		position: relative;
+		.effect{
+			position: absolute;
+			height: 100%;
+			width: 100%;
+			background: rgba($color-dark, .7);
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			@include transition();
+			span{
+				color: $color-white;
+				font-size: 48px;
+				@include transition();
+			}
+		}
+	}
+}
+
+.preview-video{
+	&:hover .image .effect{
+		opacity: 1
+	}
+	&:hover .image .h3{
+		opacity: 0
+	}
+	.image{
+		.effect{
+			opacity: 0;
+		}
+		.h3{
+			@include transition();
+			color: $color-white;
+			font-size: 18px;
+			position: absolute;
+			width: 100%;
+			bottom: 0px;
+			font-family: Montserrat-Regular;
+			font-weight: 400;
+			text-align: center;
+			padding: 15px 5px;
+			margin: 0px;
+			background-color: rgba($color-dark, .7);
+		}
+	}
+}
+.contact-map{
+	filter: grayscale(90%);
+}
+.contact__page{
+	&-line{
+		font-size: 24px;
+		color: $color-dark;
+		display: flex;
+		align-items: center;
+		margin: 15px 0;
+	}
+	&-type{
+		display: flex;
+		align-items: center;
+		@include text-gradient();
+	}
+	&-form{
+		margin: 30px 0;
+		label.error{
+		    position: absolute;
+		    left: 0;
+		    margin-left: 30px;
+		    margin-top: 35px;
+		}
+	}
+}
 @import "admin"; // Styles for admin
 @import "media"; // Always at the end
