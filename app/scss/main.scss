@@ -683,6 +683,7 @@ nav {
 		}
 	}
 }
+
 a.link__album{
 	display: block;
 	width: 100%;
@@ -802,5 +803,62 @@ a.link__album{
 		}
 	}
 }
+
+.timetable{
+	padding-bottom: 30px;
+	&__nav{
+		width: fit-content;
+		display: flex;
+		justify-content: center;
+		margin-bottom: 30px;
+		margin: 0 auto;
+		&:before{
+			content: '';
+			height: 2px;
+			width: 100%;
+			position: absolute;
+			margin-top: 39px;
+			@include gradient();
+		}
+		&-link{
+			font-family: Lato-Light;
+			font-size: 14px;
+			padding: 10px;
+			text-align: center;
+			color: $color-dark;
+			@include transition();
+			&.active, &:hover{
+				color: $color-white;
+				@include gradient();
+				@include transition();
+			}
+		}
+	}
+	.tab-content{
+		display: none;
+		&.tab-active{
+			display: flex
+		}
+	}
+	.notice{
+		background-color: $color-yellow;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		min-height: 270px;
+		margin: 15px 0;
+		.hour{
+			text-align: center;
+			margin: 15px;
+			font-family: Montserrat-Regular;
+		}
+		.p{
+			margin: 15px;
+			text-align: center;
+		}
+
+	}
+}
+
 @import "admin"; // Styles for admin
 @import "media"; // Always at the end
