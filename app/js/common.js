@@ -493,4 +493,16 @@ $( document ).ready(function() {
 		});
 	});
 
+	// timetable tabs
+	$('.timetable__nav-link').click(function()
+	{
+	  var tab_id = $(this).attr('data-tab');
+
+	  $('.timetable__nav-link').removeClass('active');
+	  $('.tab-content').removeClass('tab-active');
+
+	  $(this).addClass('active');
+	  $("#"+tab_id).addClass('tab-active');	
+	});
+
 });
