@@ -406,7 +406,6 @@ a {
             color: $color-lgray;
         }
     }
-}
 
 .img-responsive{
     display: block;
@@ -420,9 +419,9 @@ a {
     }
 }
 
-.form-input, .form-textarea{
+.form-input, .form-textarea {
     position: relative;
-    label.error{
+    label.error {
         position: absolute;
         left: 0;
         margin-left: 15px;
