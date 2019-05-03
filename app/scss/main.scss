@@ -834,12 +834,6 @@ a.link__album{
 			}
 		}
 	}
-	.tab-content{
-		display: none;
-		&.tab-active{
-			display: flex
-		}
-	}
 	.notice{
 		background-color: $color-yellow;
 		display: flex;
