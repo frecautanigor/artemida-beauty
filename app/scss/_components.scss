@@ -20,7 +20,7 @@ a {
     color: $color-insta;
 }
 
-.h1, .h2 {
+.h1, .h2, .h3 {
     font-family: Montserrat-Regular;
     font-size: 32px;
     text-align: center;
@@ -39,6 +39,11 @@ a {
 .h2 {
     font-size: 24px;
     @include text-gradient();
+}
+.h3{
+    font-size: 18px;
+    font-weight: 400;
+    margin: 0;
 }
 
 .p {

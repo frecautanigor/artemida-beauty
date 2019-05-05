@@ -854,5 +854,21 @@ a.link__album{
 	}
 }
 
+.preview-promo{
+	display: flex;
+	flex-direction: column;
+	margin: 15px 0;
+	box-shadow: 0px 0px 10px 0px $color-lgray;
+	.h3{padding: 30px 0;}
+	.p{
+		color: $color-dark;
+		margin: 30px 15px;
+	}
+	.btn{
+		width: fit-content;
+		margin: 0 0 15px 15px;
+	}
+}
+
 @import "admin"; // Styles for admin
 @import "media"; // Always at the end
