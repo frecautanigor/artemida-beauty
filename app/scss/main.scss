@@ -867,17 +867,58 @@ a.link__album{
 		color: $color-dark;
 		margin: 30px 15px;
 	}
-	.btn{
-		width: fit-content;
-		margin: 0 0 15px 15px;
+	.lastline{
+		margin: 15px;
+		margin-top: 0;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		.btn{
+			width: fit-content;
+		}
+		.date{
+			color: $color-lgray;
+			display: flex;
+			align-items: center;
+			.icon{font-size: 18px;}
+		}
 	}
 }
 .promo{
 	&__content{
+		.h2, .p{text-align: left; padding: 0 5px;}
+		padding: 15px;
 		width: 100%;
-		margin: 90px 0 30px 0;
+		margin: 90px auto 30px auto;
 		box-shadow: 0px 0px 10px 0px $color-lgray;
-		text-align: center;
+		text-align: left;
+		.p{margin: 15px 0;}
+		.btn{
+			display: block;
+			margin: 0 auto;
+			width: fit-content;
+		}
+		.devider{
+			height: 2px;
+			margin: 15px 0;
+			@include gradient();
+		}
+		.open-info{
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding: 5px;
+			margin: 15px 0;
+			.date{
+				font-family: Lato-Regular;
+				font-size: 16px;
+				color: $color-lgray;
+				display: flex;
+				align-items: center;
+				.icon{font-size: 18px;}
+			}
+
+		}
 	}
 }
 

@@ -18,7 +18,9 @@
 			&.show{
 				display: flex;
 				width: 100vw;
+				height: 100vh;
 				flex-direction: column;
+				justify-content: center;
 				position: absolute;
 				top: 60px;
 				background-color: rgba($color-dark, .95);

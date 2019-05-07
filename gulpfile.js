@@ -48,6 +48,7 @@ gulp.task('scripts', function() {
 		'app/libs/fancybox-master/dist/jquery.fancybox.min.js',
 		'app/libs/masonry-docs/masonry.pkgd.min.js',
 		'app/libs/imageloaded.js',
+		'app/libs/ya-share.js',
 		'app/js/common.js', // Always at the end
 		])
 	.pipe(concat('scripts.min.js'))
