@@ -572,7 +572,6 @@ nav {
 	}
 }
 .values-row{
-	background-attachment: fixed;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center center;
@@ -918,6 +917,50 @@ a.link__album{
 				.icon{font-size: 18px;}
 			}
 
+		}
+	}
+}
+.index{
+	.about{
+		.h2{margin: 0; padding: 0;}
+		.p{padding: 0; margin: 0;}
+		&__left{
+			padding: 30px;
+			.btn{
+				display: block;
+				width: fit-content;
+				margin: 15px auto;
+			}
+			.p{padding: 30px 0}
+		}
+		&__right{
+			padding: 30px;
+			.value{
+				margin-bottom: 15px;
+				.h2{
+					display: flex;
+					align-items: center;
+					[class*="icon-"]{
+						font-size: 32px;
+						margin-right: 10px;
+					}
+				}
+			}
+		}
+	}
+
+	.services{
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-size: cover;
+		.img{
+			width: 196px;
+			min-height: 196px;
+			border-radius: 50%;
+			background-repeat: no-repeat;
+			background-position: center center;
+			background-size: cover;
+			border: 5px solid $color-accent2;
 		}
 	}
 }

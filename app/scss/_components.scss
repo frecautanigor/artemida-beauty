@@ -25,10 +25,12 @@ a {
     font-size: 32px;
     text-align: center;
     text-transform: uppercase;
+    font-weight: 400;
 
     &.grd {@include text-gradient();}
     &.white{color: $color-white}
     &.dark{color: $color-dark;}
+    &.left{text-align: left;}
 }
 
 .h1,
@@ -38,7 +40,6 @@ a {
 
 .h2 {
     font-size: 24px;
-    @include text-gradient();
 }
 .h3{
     font-size: 18px;
