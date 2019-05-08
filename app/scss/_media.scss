@@ -37,8 +37,14 @@
 				align-items: center;
 			}
 		}
-
 	}
+
+	.services{
+		&__item{
+			padding: 15px !important;
+		}
+	}
+
 }
 
 // ≥768px

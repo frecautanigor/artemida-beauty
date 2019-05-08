@@ -493,4 +493,15 @@ $( document ).ready(function() {
 		});
 	});
 
+
+	// slick_testimonials
+	$('.slick_testimonial').slick({
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		autoplay: true,
+		dots: true,
+		arrows: false,
+		autoplaySpeed: 5000,
+	});
+
 });

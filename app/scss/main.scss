@@ -860,6 +860,7 @@ a.link__album{
 	display: flex;
 	flex-direction: column;
 	margin: 15px 0;
+	background-color: $color-white;
 	box-shadow: 0px 0px 10px 0px $color-lgray;
 	.h3{padding: 30px 0;}
 	.p{
@@ -921,7 +922,9 @@ a.link__album{
 	}
 }
 .index{
-	.about{
+	&__about{
+		margin-bottom: 30px;
+		padding-bottom: 30px;
 		.h2{margin: 0; padding: 0;}
 		.p{padding: 0; margin: 0;}
 		&__left{
@@ -949,19 +952,157 @@ a.link__album{
 		}
 	}
 
-	.services{
+	&__services{
+		padding-bottom: 30px;
+		margin-top: 30px;
+		margin-bottom: 30px;
 		background-repeat: no-repeat;
 		background-position: center center;
 		background-size: cover;
-		.img{
-			width: 196px;
-			min-height: 196px;
-			border-radius: 50%;
-			background-repeat: no-repeat;
-			background-position: center center;
-			background-size: cover;
-			border: 5px solid $color-accent2;
+		&__item{
+			margin: 15px auto;
+			padding: 0;
 		}
+		.img{
+			width: 100%;
+			border-radius: 50%;
+			border: 5px solid $color-accent2;
+			img{
+				width: 100%;
+				border-radius: 50%;
+			}
+		}
+		.h2{
+			margin: 15px 0;
+			padding: 0;
+		}
+		.p{
+			margin: 0;
+			color: $color-white;
+			text-align: center;
+		}
+		.btn{
+			display: block;
+			width: fit-content;
+			margin: 30px auto;
+		}
+	}
+
+	&__gallery{
+		margin: 30px auto;
+		.grid-item{
+			margin: 15px auto;
+		}
+		.btn{
+			display: block;
+			width: fit-content;
+			margin: 15px auto;
+		}
+	}
+
+	&__promo{
+		background-color: $color-dark;
+		margin-top: 30px;
+		margin-bottom: 30px;
+		padding-bottom: 30px;
+		.col-12 .btn{
+			display: block;
+			width: fit-content;
+			margin: 30px auto;
+		}
+	}
+
+	&__team{
+		margin-top: 30px;
+		margin-bottom: 30px;
+		padding-bottom: 30px;
+		.btn{
+			display: block;
+			width: fit-content;
+			margin: 30px auto;
+		}
+	}
+
+	&__testimonials{
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-size: cover;
+		margin-bottom: 30px;
+		padding-bottom: 30px;
+		.slide{
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			.image{
+				min-width: 180px;
+				min-height: 180px;
+				border-radius: 50%;
+				border: 5px solid $color-accent2;
+				background-repeat: no-repeat;
+				background-position: center center;
+				background-size: cover;
+				[class*="icon-"]{
+					position: absolute;
+					font-size: 24px;
+					color: $color-white;
+					border-radius: 50%;
+					padding: 10px;
+					@include gradient();
+				}
+			}
+			.person{
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				margin: 30px 0;
+				.h2, .p{
+					margin: 0;
+					padding: 0;
+					color: $color-white;
+				}
+				.p{
+					font-size: 18px;
+				}
+			}
+			.text{
+				margin: 0;
+				padding: 0;
+				width: 50%;
+				color: $color-white;
+				text-align: center;
+			}
+		}
+		.slick-dots {
+			display: flex;
+			justify-content: center;
+			margin: 0;
+			padding: 1rem 0;
+			list-style-type: none;
+				li {
+					margin: 0 5px;
+				}
+				button {
+					outline: none;
+					display: block;
+					width: 15px;
+					height: 15px;
+					padding: 0;
+					border: none;
+					border-radius: 100%;
+					border: 2px solid $color-accent2;
+					background-color: transparent;
+					text-indent: -9999px;
+				}
+				li.slick-active button {
+					@include gradient();
+				}
+		}
+	}
+
+	.slick-slide{
+		outline: none !important;
 	}
 }
 
