@@ -20,10 +20,10 @@
 				width: 100vw;
 				height: 100vh;
 				flex-direction: column;
-				justify-content: center;
+				justify-content: flex-start;
 				position: absolute;
 				top: 60px;
-				background-color: rgba($color-dark, .95);
+				background-color: $color-dark;
 				a{
 					margin: 10px;
 				}

@@ -99,7 +99,7 @@ $( document ).ready(function() {
 		$(window).scroll(function() {    
 			var scroll = $(window).scrollTop();
 
-			if (scroll >= 400) {
+			if (scroll >= 200) {
 				nav.removeClass('transparent').addClass("dark");
 			}
 			else {
@@ -468,16 +468,6 @@ $( document ).ready(function() {
 	  cookieName : 'homepage',
 	  showAgainSelector: '#show-message'
 	 });
-	});
-
-	// smoth scroll
-	$(document).ready(function() {
-		try {
-			$.browserSelector();
-			if ($("html").hasClass("chrome")) {
-				$.smoothScroll();
-			}
-		} catch (err) {};
 	});
 
 	// fancy-box
