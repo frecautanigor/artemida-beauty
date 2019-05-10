@@ -179,17 +179,6 @@ $( document ).ready(function() {
 				minlength: 9
 			},
 		},
-		messages: {
-			name: {
-				required:"Cîmp Obligatoriu",
-				minlength: "Minim 5 caractere !"
-			},
-			phone: {
-				required: "Cîmp Obligatoriu",
-				digits: "Doar cifre",
-				minlength: "Minim 9 cifre !",
-			},                                           
-		},
 	});
 
 	$( "#newsletter__form" ).validate({
@@ -197,12 +186,6 @@ $( document ).ready(function() {
 			mail: {
 				required: true,
 				email: true,
-			},
-		},
-		messages: {
-			mail: {
-				required:"Mail Obligatoriu",
-				email: "Mail invalid"
 			},
 		},
 	});
@@ -215,13 +198,6 @@ $( document ).ready(function() {
 				minlength: 9
 			},
 		},
-		messages: {
-			phone: {
-				required: "Cîmp Obligatoriu",
-				digits: "Doar cifre",
-				minlength: "Minim 9 cifre !",
-			},
-		},
 	});
 
 	$( "#services__form-2" ).validate({
@@ -230,13 +206,6 @@ $( document ).ready(function() {
 				required: true,
 				digits: true,
 				minlength: 9
-			},
-		},
-		messages: {
-			phone: {
-				required: "Cîmp Obligatoriu",
-				digits: "Doar cifre",
-				minlength: "Minim 9 cifre !",
 			},
 		},
 	});
@@ -249,13 +218,6 @@ $( document ).ready(function() {
 				minlength: 9
 			},
 		},
-		messages: {
-			phone: {
-				required: "Cîmp Obligatoriu",
-				digits: "Doar cifre",
-				minlength: "Minim 9 cifre !",
-			},
-		},
 	});
 
 	$( "#services__form-4" ).validate({
@@ -266,13 +228,6 @@ $( document ).ready(function() {
 				minlength: 9
 			},
 		},
-		messages: {
-			phone: {
-				required: "Cîmp Obligatoriu",
-				digits: "Doar cifre",
-				minlength: "Minim 9 cifre !",
-			},
-		},
 	});
 
 	$( "#services__form-5" ).validate({
@@ -281,13 +236,6 @@ $( document ).ready(function() {
 				required: true,
 				digits: true,
 				minlength: 9
-			},
-		},
-		messages: {
-			phone: {
-				required: "Cîmp Obligatoriu",
-				digits: "Doar cifre",
-				minlength: "Minim 9 cifre !",
 			},
 		},
 	});
@@ -312,25 +260,6 @@ $( document ).ready(function() {
 				email: true,
 			},
 		},
-		messages: {
-			message: {
-					required:"Cîmp Obligatoriu",
-					minlength: 10
-			},
-			name: {
-				required:"Cîmp Obligatoriu",
-				minlength: "Minim 5 caractere !"
-			},
-			phone: {
-				required: "Cîmp Obligatoriu",
-				digits: "Doar cifre",
-				minlength: "Minim 9 cifre !",
-			},
-			mail: {
-				required:"Mail Obligatoriu",
-				email: "Mail invalid"
-			},
-		},
 	});
 
 	$( "#testimonial__form" ).validate({
@@ -352,24 +281,6 @@ $( document ).ready(function() {
 				required: true,
 			},
 		},
-		messages: {
-			message: {
-					required:"Cîmp Obligatoriu",
-					minlength: 10
-			},
-			name: {
-				required:"Cîmp Obligatoriu",
-				minlength: "Minim 5 caractere !"
-			},
-			phone: {
-				required: "Cîmp Obligatoriu",
-				digits: "Doar cifre",
-				minlength: "Minim 9 cifre !",
-			},
-			choseFile: {
-				required: "Alege imaginea."
-			}
-		},
 	});
 
 	$( "#career__form" ).validate({
@@ -390,25 +301,6 @@ $( document ).ready(function() {
 			mail: {
 				required: true,
 				email: true,
-			},
-		},
-		messages: {
-			message: {
-				required:"Cîmp Obligatoriu",
-				minlength: "Minim 10 caractere"
-			},
-			name: {
-				required:"Cîmp Obligatoriu",
-				minlength: "Minim 5 caractere !"
-			},
-			phone: {
-				required: "Cîmp Obligatoriu",
-				digits: "Doar cifre",
-				minlength: "Minim 9 cifre !",
-			},
-			mail: {
-				required:"Mail Obligatoriu",
-				email: "Mail invalid"
 			},
 		},
 	});
@@ -433,25 +325,6 @@ $( document ).ready(function() {
 				email: true,
 			},
 		},
-		messages: {
-			message: {
-				required:"Cîmp Obligatoriu",
-				minlength: "Minim 10 caractere"
-			},
-			name: {
-				required:"Cîmp Obligatoriu",
-				minlength: "Minim 5 caractere !"
-			},
-			phone: {
-				required: "Cîmp Obligatoriu",
-				digits: "Doar cifre",
-				minlength: "Minim 9 cifre !",
-			},
-			mail: {
-				required:"Mail Obligatoriu",
-				email: "Mail invalid"
-			},
-		},
 	});
 
 	// preloader
@@ -459,7 +332,7 @@ $( document ).ready(function() {
         var $preloader = $('#p_prldr'),
             $svg_anm   = $preloader.find('.svg_anm');
         $svg_anm.fadeOut();
-        $preloader.delay(2000).fadeOut('slow');
+        $preloader.delay(500).fadeOut('slow');
     });
 
 	// cookies

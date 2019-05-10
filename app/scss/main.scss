@@ -965,6 +965,13 @@ a.link__album{
 		background-repeat: no-repeat;
 		background-position: center center;
 		background-size: cover;
+		position: relative;
+		.filter{
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			background-color: rgba($color-dark, .7);
+		}
 		&__item{
 			margin: 15px auto;
 			padding: 0;
