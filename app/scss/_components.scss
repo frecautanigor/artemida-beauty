@@ -276,11 +276,11 @@ a {
 
 .btn.save {
     @include gradient($color-green, $color-yellow);
-    color: #fff;
+    color: $color-lgray;
 
     &:focus,
     &:hover {
-        color: $color-green;
+        color: $color-lgray;
     }
 
     &:hover {

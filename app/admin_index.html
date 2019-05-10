@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+    <meta charset="utf-8">
+    <!-- <base href="../img/favicon/"> -->
+
+    <title>Artemida | ADMIN</title>
+    <meta name="description" content="">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- Template Basic Images Start -->
+    <meta property="og:image" content="path/to/image.jpg">
+    <link rel="apple-touch-icon" sizes="57x57" href="../img/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../img/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../img/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../img/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../img/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../img/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="../img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="../img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../img/favicon/manifest.json">
+    <!-- Template Basic Images End -->
+
+    <!-- Custom Browsers Color Start -->
+    <meta name="theme-color" content="#111">
+    <!-- Custom Browsers Color End -->
+
+    <link rel="stylesheet" href="../css/main.min.css">
+
+
+</head>
+
+<body>
+
+    <div id="del_confirm" class="modal">
+      <p>Sigur doriți să ștergeți?</p>
+      <a href="#" class="btn save" rel="modal:close">Nu</a>
+      <a href="#" class="btn delete">Da</a>
+    </div>
+
+    <div class="wrapper">
+
+        <aside id="aside" class="aside">
+            <div class="aside__holder">
+                <div class="aside__header">
+                    <a href="" class="aside__logo"><i class="icon-logo"></i></a>
+                    <div class="adminlinks">
+                        <a href="">Admin Start Page</a>
+                        <a href="">Admin Despre</a>
+                        <a href="">Admin Echipa</a>
+                        <a href="">Admin Servicii</a>
+                        <a href="">Admin Promo</a>
+                        <a href="">Admin Galerie</a>
+                        <a href="">Admin Orar</a>
+                    </div>
+                    <a href="" class="btn reverse">Exit</a>
+                    <div class="admincreators">
+                        Designed & developed<br>with <span class="icon-heart"></span> by<br><a href="https://www.facebook.com/danielpascari" target="_blank">@danielpascari</a> and <a href="https://www.facebook.com/frecautanigor" target="_blank">@igorfrecautan</a>.
+                    </div>
+                </div>
+                
+            </div>
+        </aside>
+
+        <div class="container">
+            <div class="row">
+                <button class="aside__button" data-aside="aside">☰</button>
+
+                <div class="col-12">
+                    <div class="row">
+                        <div class="col-12">
+                            <h1 class="h1">Admin Start Page</h1>
+                        </div>
+                    </div>
+
+                    <div class="row section">
+                        <div class="col-12"><h2 class="h2"><span class="icon-appointment"></span> Recenzii</h2></div>
+
+                        <div class="col-12 col-md-6">
+                                <form action="" class="admintestimonial" id="">
+                                    <div class="admintestimonial__left">
+
+                                        <div class="file-upload">
+
+                                            <div class="file-select">
+                                                <div class="file-select-button fileName">Imagine autor</div>
+                                                <div class="file-select-name noFile">...</div> 
+                                                <input type="file" accept="image/*" name="choseFile" class="chooseFile">
+                                            </div>
+                                        </div>
+
+                                        <div class="form-textarea">
+                                            <textarea name="message" placeholder="Recenzie"></textarea>
+                                        </div>
+                                    </div>
+
+                                    <div class="admintestimonial__right">
+                                        <div class="form-input name"><input type="text" name="name" placeholder="Nume Prenume"></div>
+                                        <div class="form-input"><input type="text" name="function" placeholder="Funcție"></div>
+                                        <button class="btn save">+ adaugă o recenzie</button>
+                                    </div>
+
+                                    
+                                </form>
+                        </div>
+
+                        <div class="col-12 col-md-6">
+                                <form action="" class="admintestimonial" id="">
+
+                                    <div class="admintestimonial__left">
+                                        <div class="file-upload">
+                                            <div class="file-select">
+                                                <div class="file-select-button fileName">Imagine autor</div>
+                                                <div class="file-select-name noFile">...</div> 
+                                                <input type="file" accept="image/*" name="choseFile" class="chooseFile">
+                                            </div>
+                                        </div>
+
+                                        <div class="form-textarea">
+                                            <textarea name="message" placeholder="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere quam pariatur culpa, numquam sint eum nemo. Cum optio cupiditate explicabo numquam quidem, ab, asperiores itaque earum, consectetur provident quaerat aspernatur!</textarea>
+                                        </div>
+                                    </div>
+
+                                    <div class="admintestimonial__right">
+                                        <div class="form-input name"><input type="text" name="name" placeholder="Igor Frecautan"></div>
+                                        <div class="form-input"><input type="text" name="function" placeholder="boss at 'addnew' "></div>
+                                        <button class="btn save">Salvează</button>
+                                        <a href="#del_confirm" rel="modal:open" class="btn delete">Șterge</a>
+                                    </div>
+
+                                    
+                                </form>
+                        </div>
+
+                        <div class="col-12 col-md-6">
+                                <form action="" class="admintestimonial" id="">
+
+                                    <div class="admintestimonial__left">
+                                        <div class="file-upload">
+                                            <div class="file-select">
+                                                <div class="file-select-button fileName">Imagine autor</div>
+                                                <div class="file-select-name noFile">...</div> 
+                                                <input type="file" accept="image/*" name="choseFile" class="chooseFile">
+                                            </div>
+                                        </div>
+
+                                        <div class="form-textarea">
+                                            <textarea name="message" placeholder="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere quam pariatur culpa, numquam sint eum nemo. Cum optio cupiditate explicabo numquam quidem, ab, asperiores itaque earum, consectetur provident quaerat aspernatur!</textarea>
+                                        </div>
+                                    </div>
+
+                                    <div class="admintestimonial__right">
+                                        <div class="form-input name"><input type="text" name="name" placeholder="Igor Frecautan"></div>
+                                        <div class="form-input"><input type="text" name="function" placeholder="boss at 'addnew' "></div>
+                                        <button class="btn save">Salvează</button>
+                                        <a href="#del_confirm" rel="modal:open" class="btn delete">Șterge</a>
+                                    </div>
+
+                                    
+                                </form>
+                        </div>
+
+                        <div class="col-12 col-md-6">
+                                <form action="" class="admintestimonial" id="">
+
+                                    <div class="admintestimonial__left">
+                                        <div class="file-upload">
+                                            <div class="file-select">
+                                                <div class="file-select-button fileName">Imagine autor</div>
+                                                <div class="file-select-name noFile">...</div> 
+                                                <input type="file" accept="image/*" name="choseFile" class="chooseFile">
+                                            </div>
+                                        </div>
+
+                                        <div class="form-textarea">
+                                            <textarea name="message" placeholder="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere quam pariatur culpa, numquam sint eum nemo. Cum optio cupiditate explicabo numquam quidem, ab, asperiores itaque earum, consectetur provident quaerat aspernatur!</textarea>
+                                        </div>
+                                    </div>
+
+                                    <div class="admintestimonial__right">
+                                        <div class="form-input name"><input type="text" name="name" placeholder="Igor Frecautan"></div>
+                                        <div class="form-input"><input type="text" name="function" placeholder="boss at 'addnew' "></div>
+                                        <button class="btn save">Salvează</button>
+                                        <a href="#del_confirm" rel="modal:open" class="btn delete">Șterge</a>
+                                    </div>
+
+                                    
+                                </form>
+                        </div>
+
+                        <div class="col-12 col-md-6">
+                                <form action="" class="admintestimonial" id="">
+
+                                    <div class="admintestimonial__left">
+                                        <div class="file-upload">
+                                            <div class="file-select">
+                                                <div class="file-select-button fileName">Imagine autor</div>
+                                                <div class="file-select-name noFile">...</div> 
+                                                <input type="file" accept="image/*" name="choseFile" class="chooseFile">
+                                            </div>
+                                        </div>
+
+                                        <div class="form-textarea">
+                                            <textarea name="message" placeholder="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere quam pariatur culpa, numquam sint eum nemo. Cum optio cupiditate explicabo numquam quidem, ab, asperiores itaque earum, consectetur provident quaerat aspernatur!</textarea>
+                                        </div>
+                                    </div>
+
+                                    <div class="admintestimonial__right">
+                                        <div class="form-input name"><input type="text" name="name" placeholder="Igor Frecautan"></div>
+                                        <div class="form-input"><input type="text" name="function" placeholder="boss at 'addnew' "></div>
+                                        <button class="btn save">Salvează</button>
+                                        <a href="#del_confirm" rel="modal:open" class="btn delete">Șterge</a>
+                                    </div>
+
+                                    
+                                </form>
+                        </div>
+
+                        <div class="col-12 col-md-6">
+                                <form action="" class="admintestimonial" id="">
+
+                                    <div class="admintestimonial__left">
+                                        <div class="file-upload">
+                                            <div class="file-select">
+                                                <div class="file-select-button fileName">Imagine autor</div>
+                                                <div class="file-select-name noFile">...</div> 
+                                                <input type="file" accept="image/*" name="choseFile" class="chooseFile">
+                                            </div>
+                                        </div>
+
+                                        <div class="form-textarea">
+                                            <textarea name="message" placeholder="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere quam pariatur culpa, numquam sint eum nemo. Cum optio cupiditate explicabo numquam quidem, ab, asperiores itaque earum, consectetur provident quaerat aspernatur!</textarea>
+                                        </div>
+                                    </div>
+
+                                    <div class="admintestimonial__right">
+                                        <div class="form-input name"><input type="text" name="name" placeholder="Igor Frecautan"></div>
+                                        <div class="form-input"><input type="text" name="function" placeholder="boss at 'addnew' "></div>
+                                        <button class="btn save">Salvează</button>
+                                        <a href="#del_confirm" rel="modal:open" class="btn delete">Șterge</a>
+                                    </div>
+
+                                    
+                                </form>
+                        </div>
+
+                    </div>
+
+                    <div class="row section">
+                        <div class="col-12"><h2 class="h2"><span class="icon-appointment"></span> Contacte</h2></div>
+
+                        <div class="col-12 col-md-8 offset-md-2">
+                            <form action="" class="admincontacts">
+                                
+                                <div class="admincontacts__left">
+                                    <div class="form-input"><input type="text" name="town" placeholder="Oraș"></div>
+                                    <div class="form-input"><input type="text" name="town_ru" placeholder="(rus) Город"></div>
+                                    <div class="form-input"><input type="text" name="street" placeholder="Strada"></div>
+                                    <div class="form-input"><input type="text" name="street_ru" placeholder="(rus) Улица"></div>
+                                </div>
+                                <div class="admincontacts__right">
+                                    <div class="form-input"><input type="text" name="stationar_phone" placeholder="Telefon Fix"></div>
+                                    <div class="form-input"><input type="text" name="mobile_phone" placeholder="Telefon Mobil"></div>
+                                    <div class="form-input"><input type="text" name="mail" placeholder="Adresă Email"></div>
+                                    <button class="btn save">salvează</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>              
+            </div>
+        </div>
+    </div>
+
+
+    <script src="js/scripts.min.js"></script>
+
+</body>
+
+</html>

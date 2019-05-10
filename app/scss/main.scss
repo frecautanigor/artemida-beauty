@@ -351,7 +351,6 @@ nav {
 		}
 	}
 }
-
 .absolute__elements{
 	position: fixed;
 	bottom: 0px;
@@ -1118,6 +1117,7 @@ a.link__album{
 		outline: none !important;
 	}
 }
+
 
 @import "admin"; // Styles for admin
 @import "media"; // Always at the end
