@@ -367,4 +367,17 @@ $( document ).ready(function() {
 		autoplaySpeed: 5000,
 	});
 
+	// tabs
+
+	$('.tab-link').click(function()
+	{
+	  var tab_id = $(this).attr('data-tab');
+
+	  $('.tab-link').removeClass('active');
+	  $('.tab-content').removeClass('tab-active');
+
+	  $(this).addClass('active');
+	  $("#"+tab_id).addClass('tab-active');
+	});
+
 });

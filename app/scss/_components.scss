@@ -455,3 +455,13 @@ a.add-teammate{
         margin-top: 35px;
     }
 }
+
+// tabs
+.tab-content{
+    display: none;
+    padding: 40px 0;
+    &.tab-active{
+        display: flex;
+    }
+}
+//  //

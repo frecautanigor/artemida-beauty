@@ -71,6 +71,16 @@
 	        }
 	    }
 	}
+	.adminservices{
+		&__form{
+			.pluses{
+				flex-direction: column;
+			}
+			&-right, &-left{
+				width: 100%;
+			}
+		}
+	}
 }
 
 // ≥576px

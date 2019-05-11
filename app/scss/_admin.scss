@@ -149,7 +149,7 @@
             display: flex;
         }
         &-right, &-left{
-            padding: 15px;
+         padding: 0 15px;
         }
         .btn{
             display: block;
@@ -157,3 +157,57 @@
         }
     }
 }
+
+.adminservices{
+    &__nav{
+        display: flex;
+        justify-content: center;
+        padding: 0;
+        &:before{
+            width: 100%;
+            content: '';
+            height: 2px;
+            position: absolute;
+            margin-top: 36px;
+            @include gradient();
+        }
+        &-link{
+            font-family: Montserrat-Regular;
+            font-size: 24px;
+            width: 50%;
+            text-transform: uppercase;
+            height: 36px;
+            text-align: center;
+            color: $color-dark;
+            @include transition();
+            &.active, &:hover{
+                color: $color-white;
+                @include gradient();
+                @include transition();
+            }
+        }
+    }
+    &__form{
+        border-bottom: 1px dotted $color-dark;
+        padding-bottom: 15px;
+        .form-textarea textarea{margin-bottom: 0;}
+        .pluses{display: flex;}
+        &-right, &-left{
+            padding: 0 15px;
+            width: 50%;
+            .item{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 10px 0;
+                [class*="icon-"]{margin-right: 5px;}
+                .form-textarea{min-height: 200px}
+            }
+        }
+        .btn{
+            display: block;
+            margin: 15px auto;
+        }
+    }
+}
+
