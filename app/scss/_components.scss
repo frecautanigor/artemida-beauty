@@ -12,6 +12,22 @@ a {
     }
 }
 
+a.add-teammate{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: $color-dark;
+    font-size: 72px;
+    margin-top: 15px;
+    height: 494px;
+    color: $color-white;
+    @include transition();
+    &:hover{
+        background-color: rgba($color-dark, .9);
+    }
+}
+
 .fb:hover {
     color: $color-fb;
 }
