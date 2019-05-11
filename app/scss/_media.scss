@@ -62,6 +62,15 @@
 		min-height: 200px;
 		background-attachment: fixed;
 	}
+	.adminabout{
+	    &__waw, &__vision, &__mission, &__values{
+	        display: flex;
+	        flex-direction: column;
+	        &-right, &-left{
+	            width: auto;
+	        }
+	    }
+	}
 }
 
 // ≥576px
