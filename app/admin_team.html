@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+    <meta charset="utf-8">
+    <!-- <base href="../img/favicon/"> -->
+
+    <title>Artemida | ADMIN</title>
+    <meta name="description" content="">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- Template Basic Images Start -->
+    <meta property="og:image" content="path/to/image.jpg">
+    <link rel="apple-touch-icon" sizes="57x57" href="../img/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../img/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../img/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../img/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../img/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../img/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="../img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="../img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../img/favicon/manifest.json">
+    <!-- Template Basic Images End -->
+
+    <!-- Custom Browsers Color Start -->
+    <meta name="theme-color" content="#111">
+    <!-- Custom Browsers Color End -->
+
+    <link rel="stylesheet" href="../css/main.min.css">
+
+
+</head>
+
+<body>
+
+    <div id="del_confirm" class="modal">
+      <p>Sigur doriți să ștergeți acest membru?</p>
+      <a href="#" class="btn save" rel="modal:close">Nu</a>
+      <a href="#" class="btn delete">Da</a>
+    </div>
+
+    <div id="teammate_add_edit" class="modal">
+            
+        <div class="modal__teammate">
+            <h1 class="h1">nume membru</h1>
+            <form action="" class="modal__teammate-form">
+
+                <div class="modal__teammate-left">
+                    <div class="file-upload">
+                        <div class="file-select">
+                            <div class="file-select-button fileName">Imagine membru.</div>
+                            <div class="file-select-name noFile">...</div> 
+                            <input type="file" accept="image/*" name="choseFile" class="chooseFile">
+                        </div>
+                    </div>
+                    <div class="form-input"><input type="text" name="name_ro" placeholder="Nume Prenume"></div>
+                    <div class="form-input"><input type="text" name="name_ru" placeholder="Имя Фамилия"></div>
+                    <div class="form-input"><input type="text" name="fnc_ro" placeholder="Funcție"></div>
+                    <div class="form-input"><input type="text" name="fnc_ru" placeholder="Должност"></div>
+                </div>
+                <div class="modal__teammate-right">
+                    <div class="form-input"><input type="text" name="tel" placeholder="Telefon"></div>
+                    <div class="form-input"><input type="text" name="mail" placeholder="Mail"></div>
+                    <div class="form-input"><input type="text" name="insta" placeholder="link instagram"></div>
+                    <div class="form-input"><input type="text" name="fb" placeholder="link facebook"></div>
+                    <button class="btn save">Salvează</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="wrapper">
+
+        <aside id="aside" class="aside">
+            <div class="aside__holder">
+                <div class="aside__header">
+                    <a href="" class="aside__logo"><i class="icon-logo"></i></a>
+                    <div class="adminlinks">
+                        <a href="">Admin Start Page</a>
+                        <a href="">Admin Despre</a>
+                        <a href="">Admin Echipa</a>
+                        <a href="">Admin Servicii</a>
+                        <a href="">Admin Promo</a>
+                        <a href="">Admin Galerie</a>
+                        <a href="">Admin Orar</a>
+                    </div>
+                    <a href="" class="btn reverse">Exit</a>
+                    <div class="admincreators">
+                        Designed & developed<br>with <span class="icon-heart"></span> by<br><a href="https://www.facebook.com/danielpascari" target="_blank">@danielpascari</a> and <a href="https://www.facebook.com/frecautanigor" target="_blank">@igorfrecautan</a>.
+                    </div>
+                </div>
+                
+            </div>
+        </aside>
+
+        <div class="container">
+            <div class="row">
+                <button class="aside__button" data-aside="aside">☰</button>
+
+                <div class="col-12">
+
+                    <div class="row">
+                        <div class="col-12">
+                            <h1 class="h1">Administrare Echipa</h1>
+                        </div>
+                    </div>
+
+                    <div class="row section">
+
+                        <div class="col-lg-3 col-sm-6 col-12">
+                            <div class="team" style="background-image: url(img/team.jpg);">
+                                <div class="team__contact">
+                                    <div class="team__contact-phone">
+                                        <i class="icon-mobile-phone"></i>
+                                        <a href="tel:068923516">068923516</a>
+                                    </div>
+                                    <div class="team__contact-email">
+                                        <a href="mailto:therock.artemida@gmail.com">therock.artemida@gmail.com</a>
+                                    </div>
+                                    <div class="team__contact-social">
+                                        <a href=""><i class="icon-facebook"></i></a>
+                                        <a href=""><i class="icon-instagram"></i></a>
+                                    </div>
+                                </div>
+
+                                <div class="team__info">
+                                    <div class="team__info-name">Dwayne Johnson</div>
+                                    <div class="team__info-function">Actor, professional wrestler</div>
+                                </div>
+                            </div>
+
+                            <div class="team__setting">
+                                <a href="#teammate_add_edit" rel="modal:open" class="btn save">Editează</a>
+                                <a href="#del_confirm" rel="modal:open" class="btn delete">Șterge</a>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-sm-6 col-12">
+                            <div class="team"  style="background-image: url(img/serv_2.jpg);">
+                                <div class="team__contact">
+                                    <div class="team__contact-phone">
+                                        <i class="icon-mobile-phone"></i>
+                                        <a href="tel:068923516">068923516</a>
+                                    </div>
+                                    <div class="team__contact-email">
+                                        <a href="mailto:therock.artemida@gmail.com">therock.artemida@gmail.com</a>
+                                    </div>
+                                    <div class="team__contact-social">
+                                        <a href=""><i class="icon-facebook"></i></a>
+                                        <a href=""><i class="icon-instagram"></i></a>
+                                    </div>
+                                </div>
+
+                                <div class="team__info">
+                                    <div class="team__info-name">Dwayne Johnson</div>
+                                    <div class="team__info-function">Actor, professional wrestler</div>
+                                </div>
+                            </div>
+
+                           <div class="team__setting">
+                               <a href="#teammate_add_edit" rel="modal:open" class="btn save">Editează</a>
+                               <a href="#del_confirm" rel="modal:open" class="btn delete">Șterge</a>
+                           </div>
+                        </div>
+
+                        <div class="col-lg-3 col-sm-6 col-12">
+                            <div class="team"  style="background-image: url(img/serv_1_sq.jpg);">
+                                <div class="team__contact">
+                                    <div class="team__contact-phone">
+                                        <i class="icon-mobile-phone"></i>
+                                        <a href="tel:068923516">068923516</a>
+                                    </div>
+                                    <div class="team__contact-email">
+                                        <a href="mailto:therock.artemida@gmail.com">therock.artemida@gmail.com</a>
+                                    </div>
+                                    <div class="team__contact-social">
+                                        <a href=""><i class="icon-facebook"></i></a>
+                                        <a href=""><i class="icon-instagram"></i></a>
+                                    </div>
+                                </div>
+
+                                <div class="team__info">
+                                    <div class="team__info-name">Dwayne Johnson</div>
+                                    <div class="team__info-function">Actor, professional wrestler</div>
+                                </div>
+                            </div>
+
+                            <div class="team__setting">
+                                <a href="#teammate_add_edit" rel="modal:open" class="btn save">Editează</a>
+                                <a href="#del_confirm" rel="modal:open" class="btn delete">Șterge</a>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-sm-6 col-12">
+                            <div class="team"  style="background-image: url(img/serv_3_sq.jpg);">
+                                <div class="team__contact">
+                                    <div class="team__contact-phone">
+                                        <i class="icon-mobile-phone"></i>
+                                        <a href="tel:068923516">068923516</a>
+                                    </div>
+                                    <div class="team__contact-email">
+                                        <a href="mailto:therock.artemida@gmail.com">therock.artemida@gmail.com</a>
+                                    </div>
+                                    <div class="team__contact-social">
+                                        <a href=""><i class="icon-facebook"></i></a>
+                                        <a href=""><i class="icon-instagram"></i></a>
+                                    </div>
+                                </div>
+
+                                <div class="team__info">
+                                    <div class="team__info-name">Dwayne Johnson</div>
+                                    <div class="team__info-function">Actor, professional wrestler</div>
+                                </div>
+                            </div>
+
+                            <div class="team__setting">
+                                <a href="#teammate_add_edit" rel="modal:open" class="btn save">Editează</a>
+                                <a href="#del_confirm" rel="modal:open" class="btn delete">Șterge</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <script src="js/scripts.min.js"></script>
+
+</body>
+
+</html>
