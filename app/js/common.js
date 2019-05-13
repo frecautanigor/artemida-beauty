@@ -369,8 +369,7 @@ $( document ).ready(function() {
 
 	// tabs
 
-	$('.tab-link').click(function()
-	{
+	$('.tab-link').click(function(){
 	  var tab_id = $(this).attr('data-tab');
 
 	  $('.tab-link').removeClass('active');
@@ -378,6 +377,14 @@ $( document ).ready(function() {
 
 	  $(this).addClass('active');
 	  $("#"+tab_id).addClass('tab-active');
+	});
+
+	// photo_del_confirm
+	$('.delconfirm_btn').click(function(){
+	  $('.photodel_confirm').addClass('show');
+	});
+	$('.deny').click(function(){
+	  $('.photodel_confirm').removeClass('show');
 	});
 
 });

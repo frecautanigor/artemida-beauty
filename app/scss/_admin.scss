@@ -273,3 +273,49 @@
    }
 }
 
+.preview-adminphoto{
+    &:hover, & .image:hover .effect{
+        opacity: 1;
+    }
+    .image{
+        position: relative;
+        .effect{
+            opacity: 0;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            background: rgba($color-dark, .7);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            @include transition();
+            .btn{margin: 15px;}
+            .photodel_confirm{
+                display: none;
+                &.show{
+                    display: flex;
+                }
+            }
+        }
+    }
+}
+.add-photo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    background-color: $color-dark;
+    min-height: 300px;
+}
+.album-cover{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 200px;
+    background-color: $color-dark;
+    margin: 30px 0;
+    background-size: cover;
+    background-position: center;
+}

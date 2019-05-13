@@ -715,6 +715,9 @@ a.link__album{
 		justify-content: center;
 		align-items: center;
 		opacity: 0;
+		&.green{
+			background-color: $color-green;
+		}
 		@include transition();
 		[class*="icon-"]{
 			font-size: 48px;
