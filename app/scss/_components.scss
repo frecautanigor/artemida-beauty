@@ -12,7 +12,7 @@ a {
     }
 }
 
-a.add-teammate{
+a.add-teammate, a.add-promo{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -27,6 +27,7 @@ a.add-teammate{
         background-color: rgba($color-dark, .9);
     }
 }
+a.add-promo{height: 530px;}
 
 .fb:hover {
     color: $color-fb;

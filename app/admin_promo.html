@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+    <meta charset="utf-8">
+    <!-- <base href="../img/favicon/"> -->
+
+    <title>Artemida | ADMIN</title>
+    <meta name="description" content="">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- Template Basic Images Start -->
+    <meta property="og:image" content="path/to/image.jpg">
+    <link rel="apple-touch-icon" sizes="57x57" href="../img/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../img/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../img/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../img/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../img/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../img/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="../img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="../img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../img/favicon/manifest.json">
+    <!-- Template Basic Images End -->
+
+    <!-- Custom Browsers Color Start -->
+    <meta name="theme-color" content="#111">
+    <!-- Custom Browsers Color End -->
+
+    <link rel="stylesheet" href="../css/main.min.css">
+
+
+</head>
+
+<body>
+
+    <div id="del_confirm" class="modal">
+      <p>Sigur doriți să ștergeți acest articol?</p>
+      <a href="#" class="btn save" rel="modal:close">Nu</a>
+      <a href="#" class="btn delete">Da</a>
+    </div>
+
+    <div id="promo_add_edit" class="modal">
+            
+        <div class="modal__promo">
+            <h1 class="h1">nume Articol / Adaugă articol</h1>
+            <form action="" class="modal__promo-form">
+
+                <div class="file-upload">
+                    <div class="file-select">
+                        <div class="file-select-button fileName">Imagine.</div>
+                        <div class="file-select-name noFile">...</div> 
+                        <input type="file" accept="image/*" name="choseFile" class="chooseFile">
+                    </div>
+                </div>
+
+                <div class="form-input"><input type="text" name="" placeholder="Titlu"></div>
+
+                <div class="form-textarea">
+                    <textarea name="" placeholder="Conținut">Atmosfera perfectă pentru mușchii dumneavoastră. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</textarea>
+                </div>
+
+                <div class="form-input"><input type="text" name="" placeholder="link"></div>
+                <button class="btn save">Salvează</button>
+
+            </form>
+        </div>
+    </div>
+
+    <div class="wrapper">
+
+        <aside id="aside" class="aside">
+            <div class="aside__holder">
+                <div class="aside__header">
+                    <a href="" class="aside__logo"><i class="icon-logo"></i></a>
+                    <div class="adminlinks">
+                        <a href="">Admin Start Page</a>
+                        <a href="">Admin Despre</a>
+                        <a href="">Admin Echipa</a>
+                        <a href="">Admin Servicii</a>
+                        <a href="">Admin Promo</a>
+                        <a href="">Admin Galerie</a>
+                        <a href="">Admin Orar</a>
+                    </div>
+                    <a href="" class="btn reverse">Exit</a>
+                    <div class="admincreators">
+                        Designed & developed<br>with <span class="icon-heart"></span> by<br><a href="https://www.facebook.com/danielpascari" target="_blank">@danielpascari</a> and <a href="https://www.facebook.com/frecautanigor" target="_blank">@igorfrecautan</a>.
+                    </div>
+                </div>
+                
+            </div>
+        </aside>
+
+        <div class="container">
+            <div class="row">
+                <button class="aside__button" data-aside="aside">☰</button>
+
+                <div class="col-12">
+
+                    <div class="row">
+                        <div class="col-12">
+                            <h1 class="h1">Administrare Promo</h1>
+                        </div>
+                    </div>
+
+                    <div class="row section">
+
+                        <div class="col-lg-3 col-sm-6 col-12">
+                            <a href="#promo_add_edit" rel="modal:open" class="add-promo">+<h2 class="h2 white">Adaugă</h2></a>         
+                        </div>
+
+                        <div class="col-lg-3 col-sm-6 col-12">
+                            <div class="preview-promo">
+                                <h3 class="h3 grd">Ofertă specială pentru Studenți...........</h3>
+                                <img src="img/promo_img.jpg" alt="" class="img-responsive">
+                                <p class="p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, architecto corrupti quidem harum ipsa quo dolores sapiente ea minima iste ...</p>
+                                <div class="lastline">
+                                    <a href="#promo_add_edit" rel="modal:open" class="btn save">Editează</a>
+                                    <a href="#del_confirm" rel="modal:open" class="btn delete">Șterge</a>
+                                </div>
+                                <div class="lastline">
+                                    <div class="date"><span class="icon icon-calendar"></span> 22.06.2018</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-sm-6 col-12">
+                            <div class="preview-promo">
+                                <h3 class="h3 grd">Ofertă specială pentru Studenți...........</h3>
+                                <img src="img/promo_img.jpg" alt="" class="img-responsive">
+                                <p class="p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, architecto corrupti quidem harum ipsa quo dolores sapiente ea minima iste ...</p>
+                                <div class="lastline">
+                                    <a href="#promo_add_edit" rel="modal:open" class="btn save">Editează</a>
+                                    <a href="#del_confirm" rel="modal:open" class="btn delete">Șterge</a>
+                                </div>
+                                <div class="lastline">
+                                    <div class="date"><span class="icon icon-calendar"></span> 22.06.2018</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-sm-6 col-12">
+                            <div class="preview-promo">
+                                <h3 class="h3 grd">Ofertă specială pentru Studenți...........</h3>
+                                <img src="img/promo_img.jpg" alt="" class="img-responsive">
+                                <p class="p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, architecto corrupti quidem harum ipsa quo dolores sapiente ea minima iste ...</p>
+                                <div class="lastline">
+                                    <a href="#promo_add_edit" rel="modal:open" class="btn save">Editează</a>
+                                    <a href="#del_confirm" rel="modal:open" class="btn delete">Șterge</a>
+                                </div>
+                                <div class="lastline">
+                                    <div class="date"><span class="icon icon-calendar"></span> 22.06.2018</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-sm-6 col-12">
+                            <div class="preview-promo">
+                                <h3 class="h3 grd">Ofertă specială pentru Studenți...........</h3>
+                                <img src="img/promo_img.jpg" alt="" class="img-responsive">
+                                <p class="p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, architecto corrupti quidem harum ipsa quo dolores sapiente ea minima iste ...</p>
+                                <div class="lastline">
+                                    <a href="#promo_add_edit" rel="modal:open" class="btn save">Editează</a>
+                                    <a href="#del_confirm" rel="modal:open" class="btn delete">Șterge</a>
+                                </div>
+                                <div class="lastline">
+                                    <div class="date"><span class="icon icon-calendar"></span> 22.06.2018</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-sm-6 col-12">
+                            <div class="preview-promo">
+                                <h3 class="h3 grd">Ofertă specială pentru Studenți...........</h3>
+                                <img src="img/promo_img.jpg" alt="" class="img-responsive">
+                                <p class="p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, architecto corrupti quidem harum ipsa quo dolores sapiente ea minima iste ...</p>
+                                <div class="lastline">
+                                    <a href="#promo_add_edit" rel="modal:open" class="btn save">Editează</a>
+                                    <a href="#del_confirm" rel="modal:open" class="btn delete">Șterge</a>
+                                </div>
+                                <div class="lastline">
+                                    <div class="date"><span class="icon icon-calendar"></span> 22.06.2018</div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <script src="js/scripts.min.js"></script>
+
+</body>
+
+</html>
