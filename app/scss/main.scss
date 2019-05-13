@@ -787,6 +787,8 @@ a.link__album{
 			background-color: rgba($color-dark, .7);
 		}
 	}
+	&.red{display: block;margin-bottom: 15px;}
+	&.red .effect{background-color: rgba($color-red, .7);}
 }
 .contact-map{
 	filter: grayscale(20%);

@@ -12,7 +12,7 @@ a {
     }
 }
 
-a.add-teammate, a.add-promo{
+a.add-teammate, a.add-promo, a.add-video{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -28,6 +28,7 @@ a.add-teammate, a.add-promo{
     }
 }
 a.add-promo{height: 530px;}
+a.add-video{height: 300px;margin: 0; margin-bottom: 15px;}
 
 
 .fb:hover {
