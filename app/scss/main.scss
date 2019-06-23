@@ -54,7 +54,18 @@ header {
 			font-family: Montserrat-Light;
 			font-size: 32px;
 			padding-left: 8%;
+			padding-right: 8%;
 			padding-top: 22%;
+			max-width: 768px;
+			&_btn{
+				background-color: rgba($color-white, .7);
+				color: $color-dark;
+				padding: 0 5px;
+				&:hover{
+					background-color: $color-dark;
+					color: $color-white;
+				}
+			}
 		}
 	}
 }
@@ -161,7 +172,7 @@ nav {
 				flex-direction: column;
 				color: $color-white;
 				font-size: 14px;
-				.location, .phones, .mail{
+				.location, .phones, .mail, .time{
 					display: flex;
 					align-items: center;
 					margin: 15px 0;

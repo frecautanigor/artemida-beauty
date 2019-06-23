@@ -120,7 +120,26 @@
         padding: 15px;
     }
 }
-
+.adminstart{
+    border-bottom: 1px dotted $color-dark;
+    padding-bottom: 15px;
+    .btn{
+        display: block;
+        width: fit-content;
+        margin: 0 auto;
+    }
+    &__roru{
+        display: flex;
+        &-ro, &-ru{
+            width: 50%;
+            margin: 15px;
+            .form-input{margin: 15px 0 10px 0;}
+            .form-textarea{margin: 15px 0;}
+            .form-textarea:not(.val){min-height: 250px;}
+            .val{min-height: 100px; padding-bottom: 5px;}
+        }
+    }
+}
 .adminabout{
     border-bottom: 1px dotted $color-dark;
     padding-bottom: 15px;

@@ -62,6 +62,15 @@
 		min-height: 200px;
 		background-attachment: fixed;
 	}
+	.adminstart{
+	    &__roru{
+	        display: flex;
+	        flex-direction: column;
+	        &-ro, &-ru{
+	            width: auto;
+	        }
+	    }
+	}
 	.adminabout{
 	    &__waw, &__vision, &__mission, &__values{
 	        display: flex;
